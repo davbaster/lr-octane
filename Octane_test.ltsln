@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+# SharpDevelop 4.1.3.0-trunk
+Project("36024B94-7B25-4F37-B4D3-B57660C48E32") = "WebHttpHtml_octane_test", "WebHttpHtml_octane_test\WebHttpHtml_octane_test.usr", "36024B94-7B25-4F37-B4D3-B57660C48E32"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkM6XFVzZXJzXHVmdHVzZXJccmVwb3NcZGF2aWRcbHItb2N0YW5lXFdlYkh0dHBIdG1sX29jdGFuZV90ZXN0XFdlYkh0dHBIdG1sX29jdGFuZV90ZXN0LnVzcjwvTG9hZERhdGE+DQogIDxGaWxlcz4NCiAgICA8RmlsZT5XZWJIdHRwSHRtbF9vY3RhbmVfdGVzdC51c3I8L0ZpbGU+DQogIDwvRmlsZXM+DQogIDxNb2RpZmllZD4yMDIxLTA1LTA3VDIwOjQ3OjI4Ljg2NTExNyswMDowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = True
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		36024B94-7B25-4F37-B4D3-B57660C48E32.Debug|Any CPU.Build.0 = Debug|Any CPU
+		36024B94-7B25-4F37-B4D3-B57660C48E32.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		36024B94-7B25-4F37-B4D3-B57660C48E32.Release|Any CPU.Build.0 = Release|Any CPU
+		36024B94-7B25-4F37-B4D3-B57660C48E32.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

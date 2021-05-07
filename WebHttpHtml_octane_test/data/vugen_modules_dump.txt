@@ -286,7 +286,6 @@
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\System32\Windows.Globalization.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\globinputhost.dll
 		7.00.9600.18334 (winblue_ltsb.160506-0600)C:\Windows\System32\StructuredQuery.dll
-		6.3.9600.17031 (winblue_gdr.140221-1952)C:\Windows\system32\SearchFolder.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\system32\NetworkExplorer.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\system32\twinapi.appcore.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\MrmCoreR.dll
@@ -303,20 +302,47 @@
 		                              C:\PCHOST\bin\WebEventTrafficMap.dll
 		1.1.1                         C:\PCHOST\bin\libcrypto-lt-1_1.dll
 		12.60.971.0                   C:\PCHOST\bin\VuGenCallback.dll
-		12.63.399.0                   C:\PCHOST\bin\api_inspector.dll
-		12.63.146.0                   C:\PCHOST\bin\trpfnc32.dll
 		12.60.971.0                   C:\PCHOST\bin\script_language_helper.dll
 		12.60.971.0                   C:\PCHOST\bin\api_scrinfo.dll
 		12.63.141.0                   C:\PCHOST\bin\HTTPSnapshotsWrapper.dll
 		12.60.971.0                   C:\PCHOST\bin\Api_Filter_Helper.dll
 		12.60.971.0                   C:\PCHOST\bin\type_info_pool.dll
+		12.60.971.0                   C:\PCHOST\bin\traffic_filter.dll
+		                              C:\PCHOST\bin\pcre-8.42.dll
+		12.63.146.0                   C:\PCHOST\bin\ipng_utils.dll
+		1.1.1                         C:\PCHOST\bin\libssl-lt-1_1.dll
+		                              C:\PCHOST\bin\duktape.dll
+		12.63.146.0                   C:\PCHOST\bin\lrun50.dll
+		12.63.146.0                   C:\PCHOST\bin\trans.dll
+		12.63.146.0                   C:\PCHOST\bin\merc_uuid.dll
+		12.63.146.0                   C:\PCHOST\bin\faserver.dll
+		12.63.146.0                   C:\PCHOST\bin\JsonParser.dll
+		12.63.146.0                   C:\PCHOST\bin\lr_exp.dll
+		12.63.146.0                   C:\PCHOST\bin\trans_server.dll
+		12.63.146.0                   C:\PCHOST\bin\libdatatypes.dll
+		12.63.146.0                   C:\PCHOST\bin\data_types_ifs.dll
+		10.0.16299.91 (WinBuild.160101.0800)C:\PCHOST\bin\dbghelp.dll
+		12.63.146.0                   C:\PCHOST\bin\timediff_ext.dll
+		12.63.146.0                   C:\PCHOST\bin\jrequestor_srv.dll
+		12.63.146.0                   C:\PCHOST\bin\dc_requests.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-private-l1-1-0.dll
+		10.0.16299.91 (WinBuild.160101.0800)C:\PCHOST\bin\dbgcore.DLL
+		12.60.240.0                   C:\PCHOST\bin\threadsafefileoperator.dll
+		12.60.582.0                   C:\PCHOST\bin\TulipAppInfo.dll
+		12.63.146.0                   C:\PCHOST\bin\JsonParserWrapper.dll
+		12.63.399.0                   C:\PCHOST\bin\MicSocket.dll
+		4.8.3761.0 built by: NET48REL1C:\Windows\assembly\NativeImages_v4.0.30319_32\SMDiagnostics\57e52b554c5ea160c93587645203d4c3\SMDiagnostics.ni.dll
+		4.8.3761.0 built by: NET48REL1C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Servd1dec626#\fac6b6a70fb21638208aeee0027ea162\System.ServiceModel.Internals.ni.dll
+		4.8.3761.0 built by: NET48REL1C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Transactions\4bc3c8593ec21898fcbf628ea2aa51a9\System.Transactions.ni.dll
+		4.8.3761.0 built by: NET48REL1C:\Windows\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll
+		4.8.3761.0                    C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Comp46f2b404#\3dad152a16404dd2b79fd4bfc5557ab1\System.ComponentModel.DataAnnotations.ni.dll
+		6.3.9600.17031 (winblue_gdr.140221-1952)C:\Windows\system32\SearchFolder.dll
+		12.63.399.0                   C:\PCHOST\bin\api_inspector.dll
+		12.63.146.0                   C:\PCHOST\bin\trpfnc32.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\cryptui.dll
 		12.60.971.0                   C:\PCHOST\bin\lrc_basic_filters.dll
 		12.60.971.0                   C:\PCHOST\bin\api_event_parser.dll
-		12.60.971.0                   C:\PCHOST\bin\traffic_filter.dll
-		                              C:\PCHOST\bin\pcre-8.42.dll
 		12.60.971.0                   C:\PCHOST\bin\api_sock_filter.dll
-		12.63.146.0                   C:\PCHOST\bin\ipng_utils.dll
 		12.63.399.0                   C:\PCHOST\bin\WebDataFormatsCodeGen.dll
 		12.63.399.0                   C:\PCHOST\bin\DataFormatsEngine.dll
 		12.63.399.0                   C:\PCHOST\bin\WebSnapshotsCommon.dll
@@ -329,33 +355,16 @@
 		                              C:\PCHOST\bin\boost_filesystem-vc140-mt-1_60.dll
 		                              C:\PCHOST\bin\boost_system-vc140-mt-1_60.dll
 		12.63.399.0                   C:\PCHOST\bin\LrwiWebInfra.dll
-		1.1.1                         C:\PCHOST\bin\libssl-lt-1_1.dll
 		12.63.399.0                   C:\PCHOST\bin\WebCorrelation.dll
 		12.60.971.0                   C:\PCHOST\bin\LrwiStreamingParser.dll
 		12.63.146.0                   C:\PCHOST\bin\jconv_str.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\HTTPAPI.dll
 		14.00.24215.1 built by: VCTOOLSD14ULDRC:\Windows\SYSTEM32\CONCRT140.dll
 		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-conio-l1-1-0.dll
-		                              C:\PCHOST\bin\duktape.dll
 		12.63.146.0                   C:\PCHOST\bin\http_auth.dll
-		12.63.146.0                   C:\PCHOST\bin\lrun50.dll
 		12.63.399.0                   C:\PCHOST\bin\LrXml.dll
 		12.63.399.0                   C:\PCHOST\bin\LrJson.dll
-		12.63.146.0                   C:\PCHOST\bin\trans.dll
-		12.63.146.0                   C:\PCHOST\bin\merc_uuid.dll
-		12.63.146.0                   C:\PCHOST\bin\faserver.dll
 		12.60.971.0                   C:\PCHOST\bin\VnpReport.dll
-		12.63.146.0                   C:\PCHOST\bin\JsonParser.dll
-		12.63.146.0                   C:\PCHOST\bin\lr_exp.dll
-		12.63.146.0                   C:\PCHOST\bin\trans_server.dll
-		12.63.146.0                   C:\PCHOST\bin\libdatatypes.dll
-		12.63.146.0                   C:\PCHOST\bin\data_types_ifs.dll
-		10.0.16299.91 (WinBuild.160101.0800)C:\PCHOST\bin\dbghelp.dll
-		12.63.146.0                   C:\PCHOST\bin\timediff_ext.dll
-		12.63.146.0                   C:\PCHOST\bin\jrequestor_srv.dll
-		12.63.146.0                   C:\PCHOST\bin\dc_requests.dll
-		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-private-l1-1-0.dll
-		10.0.16299.91 (WinBuild.160101.0800)C:\PCHOST\bin\dbgcore.DLL
 		12.63.399.0                   C:\PCHOST\bin\WebConvertFromFormattedFilter.dll
 		12.63.399.0                   C:\PCHOST\bin\WebConvertFromFormattedPostFilter.dll
 		12.63.399.0                   C:\PCHOST\bin\WebExtractServerNameFilter.dll

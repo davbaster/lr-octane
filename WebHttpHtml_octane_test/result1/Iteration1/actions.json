@@ -1,20 +1,7 @@
 [
     {
         "actionName": "Action",
-        "steps": [
-            {
-                "stepId": "STEP1",
-                "stepName": "Url: www.google.com",
-                "infFile": "t1.inf",
-                "time": 1620419602919
-            },
-            {
-                "stepId": "STEP2",
-                "stepName": "Url: ui",
-                "infFile": "t2.inf",
-                "time": 1620419602955
-            }
-        ],
+        "steps": [],
         "transactions": []
     }
 ]

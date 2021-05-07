@@ -7,7 +7,7 @@ Registry settings:
 		default	yes
 	AUT
 		(Default)	
-		default	C:\PCHOST\bin\chrome\chrome.exe www.google.com
+		default	C:\Program Files (x86)\Google\Chrome\Application\chrome.exe www.google.com
 	DebugFilter
 		(Default)	
 		default	off
@@ -166,7 +166,7 @@ Registry settings:
 		default	false
 	TestDir
 		(Default)	
-		default	C:\Users\uftuser\repos\david\loadrunner_octane\lr-octane\WebHttpHtml_octane_test\data\
+		default	C:\Users\uftuser\repos\david\lr-octane\WebHttpHtml_octane_test\data\
 	TrapOnClient
 		default	true
 	TrapOnMainThreadOnly
@@ -328,5 +328,5 @@ Registry settings:
 		default	off
 	WorkingDir
 		(Default)	
-		default	C:\PCHOST\bin\chrome\
+		default	C:\Program Files (x86)\Google\Chrome\Application\
 

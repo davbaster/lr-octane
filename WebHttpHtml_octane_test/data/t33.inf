@@ -1,0 +1,14 @@
+[t33]
+FileName1=t33_seed.html
+URL1=https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=90
+Total=5
+ContentType=image/jpeg
+SnapshotXmlFile=snapshot_33.xml
+FileName2=t33_mqdefault.jpg
+URL2=https://i.ytimg.com/vi/FtSd844cI7U/mqdefault.jpg?sqp=-oaymwEECHwQRg&rs=AMzJL3lw-i8sPNFf4dgkF3f8o7jUMhZIIQ
+FileName3=t33_mqdefault.jpg
+URL3=https://i.ytimg.com/vi/DXUAyRRkI6k/mqdefault.jpg?sqp=-oaymwEECHwQRg&rs=AMzJL3lRkCjPY_l8ofLf6ISMlP_O1-LCNA
+FileName4=t33_mqdefault.jpg
+URL4=https://i.ytimg.com/vi/gNTDoOmc1OQ/mqdefault.jpg?sqp=-oaymwEECHwQRg&rs=AMzJL3kDU5YvKior09vnHS7rtmLVC6AqJA
+FileName5=t33_mqdefault.jpg
+URL5=https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg?sqp=-oaymwEECHwQRg&rs=AMzJL3nAwuQcMmWN-geP5s9-7lSnT8levA
