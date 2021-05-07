@@ -1,0 +1,13 @@
+[t25]
+FileName1=t25.html
+URL1=https://buy.tinypass.com/api/v3/anon/template/loadTemplateContext?aid=BM6tVBSjXE
+Total=2
+RequestHeaderFile=t25_RequestHeader.txt
+RequestBodyFile=t25_RequestBody.txt
+ResponseHeaderFile=t25_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_25.xml
+FileName2=t25_Spinner-1s-200px.gif
+URL2=https://cdn.pubguru.com/Spinner-1s-200px.gif
+[ProtocolInfo]
+ProtocolId=QTWeb

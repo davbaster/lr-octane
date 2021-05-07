@@ -1,0 +1,11 @@
+[t12]
+FileName1=t12.txt
+URL1=https://stats.g.doubleclick.net/g/collect?v=2&tid=G-509Y5N8WXG&cid=1127036404.1620419546&gtm=2oe4s0&aip=1
+Total=1
+RequestHeaderFile=t12_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t12_ResponseHeader.txt
+ContentType=text/plain
+SnapshotXmlFile=snapshot_12.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

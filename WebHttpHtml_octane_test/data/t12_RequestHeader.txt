@@ -1,0 +1,18 @@
+POST /g/collect?v=2&tid=G-509Y5N8WXG&cid=1127036404.1620419546&gtm=2oe4s0&aip=1 HTTP/1.1
+Host: stats.g.doubleclick.net
+Connection: keep-alive
+Content-Length: 0
+sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+Content-Type: text/plain;charset=UTF-8
+Accept: */*
+Origin: https://www.nacion.com
+X-Client-Data: CJW2yQEIorbJAQjBtskBCKmdygEI+MfKAQjjnMsBCKmdywEIoKDLAQjf78sBCNzyywEYjp7LAQ==
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+Referer: https://www.nacion.com/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+

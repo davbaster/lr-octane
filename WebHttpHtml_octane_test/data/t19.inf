@@ -1,0 +1,13 @@
+[t19]
+FileName1=t19.html
+URL1=https://experience.tinypass.com/xbuilder/experience/execute?aid=BM6tVBSjXE
+Total=2
+RequestHeaderFile=t19_RequestHeader.txt
+RequestBodyFile=t19_RequestBody.txt
+ResponseHeaderFile=t19_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_19.xml
+FileName2=t19_cx.html
+URL2=https://scdn.cxense.com/cx.js
+[ProtocolInfo]
+ProtocolId=QTWeb

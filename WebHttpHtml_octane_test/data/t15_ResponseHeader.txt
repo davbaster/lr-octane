@@ -1,0 +1,7 @@
+HTTP/1.1 101 Switching Protocols
+Date: Fri, 07 May 2021 20:32:40 GMT
+Connection: upgrade
+Server: nginx/1.17.8
+upgrade: websocket
+sec-websocket-accept: DqsCZwZVUB2JFBGtz9jrgSL+8IQ=
+

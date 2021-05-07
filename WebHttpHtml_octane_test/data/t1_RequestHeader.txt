@@ -1,0 +1,11 @@
+GET /chrome-variations/seed?osname=win&channel=stable&milestone=90 HTTP/1.1
+Host: clientservices.googleapis.com
+Connection: keep-alive
+If-None-Match: 6df8aa09ce98f37939af21038a7cd9f49791e7dc
+A-IM: x-bm,gzip
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+

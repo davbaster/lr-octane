@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Date: Fri, 07 May 2021 20:32:35 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx/1.18.0 (Ubuntu)
+Vary: Accept-Encoding
+X-Instance-ID: i-0ae6150f8d473bd82
+Set-Cookie: VfSess=qg035i1ns9o1btu87bqlf1tsqr; expires=Sun, 06-Jun-2021 20:32:35 GMT; Max-Age=2592000; path=/; domain=viafoura.co; secure; HttpOnly; SameSite=None
+Expires: Fri, 07 May 2021 20:32:35 GMT
+Cache-Control: max-age=0
+Pragma: no-cache
+Set-Cookie: vfThirdpartyCookiesEnabled=true; path=/; domain=viafoura.co; secure; SameSite=None
+Access-Control-Allow-Origin: https://www.nacion.com
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE, PATCH, HEAD
+Access-Control-Allow-Headers: Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+Content-Encoding: gzip
+

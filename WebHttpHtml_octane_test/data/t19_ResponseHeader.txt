@@ -1,0 +1,25 @@
+HTTP/1.1 200 
+Date: Fri, 07 May 2021 20:32:41 GMT
+Content-Type: application/json;charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+Access-Control-Allow-Origin: https://www.nacion.com
+Cache-Control: no-cache, no-store, must-revalidate
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+P3P: CP="NON DSP COR OUR IND"
+Pragma: no-cache
+Strict-Transport-Security: max-age=60; includeSubDomains
+vary: accept-encoding
+wn: prod-exp-10-0-80-30
+X-FORWARDED-HTTPS: on
+x-request-id: Chq7rsqbEwc
+CF-Cache-Status: DYNAMIC
+cf-request-id: 09ea215d40000060e60913f000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Set-Cookie: __cflb=02DiuJV9o8B8pjm1FRbpGxGb1JyKdaQrNBny9vgq4rid2; SameSite=Lax; path=/; expires=Sat, 08-May-21 19:32:41 GMT; HttpOnly
+Server: cloudflare
+CF-RAY: 64bd380eca4360e6-DUB
+Content-Encoding: br
+

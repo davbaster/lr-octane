@@ -1,0 +1,63 @@
+// Make vfQ available or use existing one if already loaded
+; window.vfQ = window.vfQ || [];
+
+window.vfQ.push(() => {
+    // Usuario quiere ingresar a alguna parte de Viaofura donde requiere
+    // estar logueado
+    window.vf.$prepublish((channel, event, ...args) => {
+        if (channel === 'authentication' && event === 'required') {
+            GNSSO.debug("Viafoura disparo el evento authentication/required", "viafoura/piano-integration");
+            tp.pianoId.show({
+                screen: 'login',
+                loggedIn: function (data) {
+                    $(document).trigger("tooglePianoId", tp.pianoId.getUser());
+                }
+            });
+        } else {
+            return { channel, event, args };
+        }
+    });
+
+    // Usuario quiere hacer logout usando widget de Viafoura
+    window.vf.$subscribe('authentication', 'logout', () => {
+        GNSSO.debug("Viafoura disparo el evento authentication/logout", "viafoura/piano-integration");
+        tp.pianoId.logout(function () {
+            GNSSO.postLogoutActions();
+            $(document).trigger("tooglePianoId", null);
+        });
+    });
+
+    window.vf.context.get('user').then(function (viafouraUser) {
+        let _pianoUser = tp.pianoId.getUser();
+
+        if (null === _pianoUser && null !== viafouraUser) {
+            // Usuario esta deslogueado en Piano, pero sigue logueado en Viafora
+            // por lo que procedemos a sacarlo de Viafora
+            window.vf.session.logout();
+            GNSSO.debug("Se deslogueo usuario de Viafoura, porque no esta logueado en Piano", "viafoura/piano-integration");
+        } else if (null !== _pianoUser && null === viafouraUser) {
+            // Usuario esta logueado en Piano, pero no en Viaofura
+            // procedemos a loguearlo en Viafoura
+            window.vf.session.login.cookie("token");
+            GNSSO.debug("Se logueo usuario de Viafoura, porque estaba logueado en Piano", "viafoura/piano-integration");
+        } else {
+            GNSSO.debug("Viafoura y Piano estan sync", "viafoura/piano-integration");
+        }
+    });
+});
+
+$(document).bind("tooglePianoId", function (e, pianoUser) {
+    GNSSO.debug("Se captura evento tooglePianoId ...", "viafoura/piano-integration");
+    window.vf.context.get('user').then(function (viafouraUser) {
+        if ((null === pianoUser || typeof pianoUser == 'undefined') && null !== viafouraUser) {
+            // Si es nulo equivale a que el usuario se deslogueo, por lo
+            // que procedemos a notificar a Viafoura de esta accion
+            window.vf.session.logout();
+            GNSSO.debug("Deslogueamos usuario de Viafoura por evento tooglePianoId", "viafoura/piano-integration");
+        } else if ((null !== pianoUser && typeof pianoUser != 'undefined') && null === viafouraUser) {
+            // Caso contrario le decimos a Viafoura que loguee al usuario
+            window.vf.session.login.cookie("token");
+            GNSSO.debug("Logueamos usuario de Viafoura por evento tooglePianoId", "viafoura/piano-integration");
+        }
+    });
+});

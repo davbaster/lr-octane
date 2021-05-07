@@ -1,0 +1,14 @@
+HTTP/1.1 204 No Content
+Date: Fri, 07 May 2021 20:32:35 GMT
+Content-Type: text/plain charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+Server: nginx/1.18.0 (Ubuntu)
+Expires: Fri, 07 May 2021 20:32:35 GMT
+Cache-Control: max-age=0
+Access-Control-Allow-Origin: https://www.nacion.com
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE, PATCH, HEAD
+Access-Control-Allow-Headers: Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+Access-Control-Max-Age: 1728000
+

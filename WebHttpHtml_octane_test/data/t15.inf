@@ -1,0 +1,15 @@
+[t15]
+FileName1=t15.html
+URL1=https://sub.viafoura.co/?site_uuid=00000000-0000-4000-8000-06c44884a6d1
+Total=3
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_15.xml
+RequestHeaderFile=t15_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t15_ResponseHeader.txt
+FileName2=t15_es-es-base-json.7b918bb75d10b905f3bb.html
+URL2=https://cdn.viafoura.net/chunks/languages/es-es-base-json.7b918bb75d10b905f3bb.js
+FileName3=t15_gpt.html
+URL3=https://securepubads.g.doubleclick.net/tag/js/gpt.js
+[ProtocolInfo]
+ProtocolId=QTWeb

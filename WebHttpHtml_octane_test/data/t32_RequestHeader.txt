@@ -1,0 +1,21 @@
+POST /checkout/template/trackShow HTTP/1.1
+Host: buy.tinypass.com
+Connection: keep-alive
+Content-Length: 1080
+sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+Accept: application/json, text/plain, */*
+Ng-Request: 1
+X-Requested-With: XMLHttpRequest
+Piano-request-without-spinner: 1
+Origin: https://buy.tinypass.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://buy.tinypass.com/checkout/template/cacheableShow?aid=BM6tVBSjXE&templateId=OTYA8G8AXHQR&offerId=fakeOfferId&experienceId=EXD694QBPR5V&iframeId=offer_4ced0c562c6257591fd0-0&displayMode=inline&debug=true&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: LANG=en_US; LANG_CHANGED=en_US
+

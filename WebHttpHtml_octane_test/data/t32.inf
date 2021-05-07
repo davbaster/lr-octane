@@ -1,0 +1,15 @@
+[t32]
+FileName1=t32.html
+URL1=https://buy.tinypass.com/checkout/template/trackShow
+Total=3
+RequestHeaderFile=t32_RequestHeader.txt
+RequestBodyFile=t32_RequestBody.txt
+ResponseHeaderFile=t32_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_32.xml
+FileName2=t32_favicon.ico
+URL2=https://www.nacion.com/pb/resources/favicon.ico?token=20170403_001
+FileName3=t32_manifest.html
+URL3=https://www.nacion.com/manifest.json
+[ProtocolInfo]
+ProtocolId=QTWeb

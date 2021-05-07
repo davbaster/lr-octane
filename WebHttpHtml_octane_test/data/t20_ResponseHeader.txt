@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD
+Access-Control-Max-Age: 3000
+Last-Modified: Mon, 15 Mar 2021 00:28:18 GMT
+x-amz-version-id: Bh9jxsQyy2co5EnPcurjLUEpWx7CZU4F
+Server: AmazonS3
+Content-Encoding: gzip
+Date: Fri, 07 May 2021 17:51:09 GMT
+ETag: W/"320a6eb581c6b1c0af052f03c59f666f"
+Vary: Origin
+X-Cache: Hit from cloudfront
+Via: 1.1 99ec3fe9aa4feaced6a6f27c619a099d.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MAN50-C3
+X-Amz-Cf-Id: n20wxXxUFZrjcCo48MebrPhqqQ6Vm_gw1RDJ6G2bm92forxg7ZUdgQ==
+Age: 9693
+

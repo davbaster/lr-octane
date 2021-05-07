@@ -1,0 +1,13 @@
+[t2]
+FileName1=t2.htm
+URL1=https://www.google.com/?gws_rd=ssl
+Total=2
+ContentType=text/html
+SnapshotXmlFile=snapshot_2.xml
+RequestHeaderFile=t2_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t2_ResponseHeader.txt
+FileName2=t2_ChNDaHJvbWUvOTAuMC40NDMwLjkzEhAJ9dVUO7IApPESBQ1pSEdH.txt
+URL2=https://content-autofill.googleapis.com/v1/pages/ChNDaHJvbWUvOTAuMC40NDMwLjkzEhAJ9dVUO7IApPESBQ1pSEdH?alt=proto
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,13 @@
+[t27]
+FileName1=t27_cacheableShow.htm
+URL1=https://buy.tinypass.com/checkout/template/cacheableShow?aid=BM6tVBSjXE&templateId=OTF6ZSW4VY3G&offerId=fakeOfferId&experienceId=EXPEFEMJ2B1B&iframeId=offer_e2fef953015106cf8c22-0&displayMode=inline&debug=true&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template
+Total=2
+ContentType=text/html
+SnapshotXmlFile=snapshot_27.xml
+RequestHeaderFile=t27_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t27_ResponseHeader.txt
+FileName2=t27_template.bundle.1.0.css
+URL2=https://buy.tinypass.com/widget/dist/template/css/template.bundle.1.0.css
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,13 @@
+[t9]
+FileName1=t9.html
+URL1=https://api.viafoura.co/v2/www.nacion.com/bootstrap/v2
+Total=2
+RequestHeaderFile=t9_RequestHeader.txt
+RequestBodyFile=t9_RequestBody.txt
+ResponseHeaderFile=t9_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_9.xml
+FileName2=t9_logo_lndata.html
+URL2=https://www.nacion.com/pb/resources/assets/la_nacion/img/sections/logo_lndata.png
+[ProtocolInfo]
+ProtocolId=QTWeb

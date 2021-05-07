@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Content-Type: text/html;charset=UTF-8
+Server: openresty
+X-Akamai-Transformed: 9 227222 0 pmb=mRUM,2
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Cache-Control: private, max-age=60
+Expires: Fri, 07 May 2021 20:33:30 GMT
+Date: Fri, 07 May 2021 20:32:30 GMT
+Transfer-Encoding:  chunked
+Connection: keep-alive
+Connection: Transfer-Encoding
+Server-Timing: cdn-cache; desc=HIT
+Server-Timing: edge; dur=8
+Content-Security-Policy: upgrade-insecure-requests
+

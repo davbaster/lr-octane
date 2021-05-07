@@ -1,0 +1,2524 @@
+{
+  "FilterHeaders": [
+    {
+      "Header": "x-requested-with",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-http-method-override",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-goog-encode-response-if-executable",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-goog-api-key",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-client-data",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "user-agent",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "upgrade-insecure-requests",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "upgrade",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-websocket-version",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-websocket-key",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-websocket-extensions",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-fetch-user",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-fetch-site",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-fetch-mode",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-fetch-dest",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-ch-ua-mobile",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-ch-ua",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "purpose",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "pragma",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "piano-request-without-spinner",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "origin",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "ng-request",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "if-none-match",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "cache-control",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "access-control-request-method",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "access-control-request-headers",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "accept-language",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-encoding",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "a-im",
+      "IncludeInScript": true
+    }
+  ],
+  "FilterResources": [
+    {
+      "IsNonResource": false,
+      "type": "text/plain charset=UTF-8"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/plain"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/javascript"
+    },
+    {
+      "IsNonResource": true,
+      "type": "text/html"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/css"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/x-icon"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/webp"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/svg+xml"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/png"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/jpeg"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/gif"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/x-protobuf"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/x-javascript"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/octet-stream"
+    },
+    {
+      "IsNonResource": true,
+      "type": "application/json"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/javascript"
+    }
+  ],
+  "GeneralInfo": {
+    "BrowserVersion": "",
+    "IsWinInetMode": false,
+    "MaxUsedConnections": 82,
+    "RecordedBrowser": "Chrome",
+    "RecordingDate": "May-07-2021",
+    "RecordingDuration": 37188,
+    "RecordingMode": "N/A",
+    "RecordingTimeStamp": 1620419519,
+    "RecordingType": "Browser",
+    "TotalBytesReceived": 1980961,
+    "TotalBytesSent": 135651,
+    "TotalRequests": 177,
+    "UserAgent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+  },
+  "HostInfo": [
+    {
+      "DomainName": "youtube.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.190",
+          "IncludeInScript": true,
+          "Name": "www.youtube.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 31,
+              "EventId": 546,
+              "HttpStatus": 200,
+              "Size": 486,
+              "URL": "https://www.youtube.com/iframe_api"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "viafoura.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "99.86.118.69",
+          "IncludeInScript": true,
+          "Name": "cdn.viafoura.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1206,
+              "HttpStatus": 200,
+              "Size": 5625,
+              "URL": "https://cdn.viafoura.net/chunks/languages/es-es-base-json.7b918bb75d10b905f3bb.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1166,
+              "HttpStatus": 200,
+              "Size": 143,
+              "URL": "https://cdn.viafoura.net/chunks/languages/intl-messageformat.faa4eb52d28c991a728b.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1083,
+              "HttpStatus": 200,
+              "Size": 5106,
+              "URL": "https://cdn.viafoura.net/chunks/vendors~languages/intl-messageformat.90484bbd11a18be65b1d.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 540,
+              "HttpStatus": 200,
+              "Size": 165067,
+              "URL": "https://cdn.viafoura.net/vf-v2.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_128_GCM_SHA256",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "viafoura.co",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "52.1.248.242",
+          "IncludeInScript": true,
+          "Name": "sub.viafoura.co",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 62,
+              "EventId": 1196,
+              "HttpStatus": 101,
+              "Size": 0,
+              "URL": "https://sub.viafoura.co/?site_uuid=00000000-0000-4000-8000-06c44884a6d1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 78,
+              "EventId": 752,
+              "HttpStatus": 101,
+              "Size": 0,
+              "URL": "https://sub.viafoura.co/"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "3.212.215.169",
+          "IncludeInScript": true,
+          "Name": "i.viafoura.co",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 93,
+              "EventId": 1374,
+              "HttpStatus": 200,
+              "Size": 67,
+              "URL": "https://i.viafoura.co/v3/www.nacion.com/ingest?t=%7B%22view%22%3A%7B%22domain%22%3A%22www.nacion.com%22%2C%22siteUuid%22%3A%2200000000-0000-4000-8000-06c44884a6d1%22%2C%22pageViews%22%3A1%2C%22outgoing%22%3A10%2C%22sessionStart%22%3A1620419550%2C%22isRecirculation%22%3Afalse%2C%22referrerStart%22%3A1620419550%2C%22refVisitCount%22%3A1%2C%22ref%22%3A%7B%22medium%22%3A%22referral%22%2C%22source%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%2C%22sharer_uuid%22%3A%22%22%2C%22terms%22%3A%22%22%7D%2C%22uniqueId%22%3A%2294d1110c-9aad-4385-ade2-d43d8c218b8e%22%2C%22firstVisit%22%3A1620419550%2C%22previousVisit%22%3A1620419550%2C%22currentVisit%22%3A1620419550%2C%22visitCount%22%3A1%7D%2C%22meta%22%3A%7B%22domain%22%3A%22www.nacion.com%22%2C%22site%22%3A%2200000000-0000-4000-8000-06c44884a6d1%22%2C%22section%22%3A%2200000000-0000-4000-8000-06c44884a6d1%22%2C%22pageImage%22%3A%22%2Fpb%2Fresources%2Fassets%2Fimg%2Ffallback-promo-image.png%3Ftoken%3D20170403_001%22%2C%22ref%22%3A%7B%7D%2C%22vf%22%3Afalse%2C%22url%22%3A%22https%3A%2F%2Fwww.nacion.com%2F%22%2C%22path%22%3A%22%2F%22%2C%22title%22%3A%22Noticias%20de%20Costa%20Rica%20-%20La%20Naci%C3%B3n%22%2C%22privilege%22%3A%22guest%22%2C%22page_description%22%3A%22Noticias%20de%20Costa%20Rica%20y%20el%20mundo%3A%20pol%C3%ADtica%2C%20econom%C3%ADa%2C%20deportes%2C%20ciencia%20y%20cultura%2C%20entre%20otros%20temas.%22%2C%22topics%22%3A%5B%5D%2C%22git%22%3A%22665016d3f92989d9c401e926f49bd1990eb7f0e1%22%2C%22amp%22%3Afalse%2C%22thirdparty_enabled%22%3Atrue%7D%2C%22ua%22%3A%7B%22nl%22%3A%22en-US%22%2C%22nu%22%3A%22Mozilla%2F5.0%20(Windows%20NT%206.3%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F90.0.4430.93%20Safari%2F537.36%22%2C%22sr%22%3A%221266x712%22%2C%22sd%22%3A24%2C%22vp%22%3A%221266x601%22%2C%22dt%22%3A%22Noticias%20de%20Costa%20Rica%20-%20La%20Naci%C3%B3n%22%2C%22de%22%3A%22UTF-8%22%2C%22dl%22%3Anull%7D%2C%22rq%22%3A%22def9fd28-ff9f-4e79-96be-d0fb5513e21b%22%2C%22rs%22%3A0%2C%22w%22%3A%5B%5D%2C%22v%22%3A5%2C%22event_type%22%3A%22analytics.view%22%7D"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "34.231.161.223",
+          "IncludeInScript": true,
+          "Name": "api.viafoura.co",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 78,
+              "EventId": 912,
+              "HttpStatus": 200,
+              "Size": 65,
+              "URL": "https://api.viafoura.co/v2/www.nacion.com/thirdpartycookie?section="
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 94,
+              "EventId": 829,
+              "HttpStatus": 200,
+              "Size": 2062,
+              "URL": "https://api.viafoura.co/v2/www.nacion.com/bootstrap/v2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain charset=UTF-8",
+              "DownloadTime": 63,
+              "EventId": 749,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "https://api.viafoura.co/v2/www.nacion.com/bootstrap/v2"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "tinypass.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "104.17.182.177",
+          "IncludeInScript": true,
+          "Name": "experience.tinypass.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/json",
+              "DownloadTime": 469,
+              "EventId": 1300,
+              "HttpStatus": 200,
+              "Size": 7927,
+              "URL": "https://experience.tinypass.com/xbuilder/experience/execute?aid=BM6tVBSjXE"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "104.17.184.177",
+          "IncludeInScript": true,
+          "Name": "cdn.tinypass.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 32,
+              "EventId": 1093,
+              "HttpStatus": 200,
+              "Size": 129675,
+              "URL": "https://cdn.tinypass.com/api/tinypass.min.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "104.17.184.177",
+          "IncludeInScript": true,
+          "Name": "buy.tinypass.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/json",
+              "DownloadTime": 391,
+              "EventId": 1621,
+              "HttpStatus": 200,
+              "Size": 60,
+              "URL": "https://buy.tinypass.com/checkout/template/trackShow"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/json",
+              "DownloadTime": 125,
+              "EventId": 1612,
+              "HttpStatus": 200,
+              "Size": 60,
+              "URL": "https://buy.tinypass.com/checkout/template/trackShow"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/json",
+              "DownloadTime": 94,
+              "EventId": 1609,
+              "HttpStatus": 200,
+              "Size": 60,
+              "URL": "https://buy.tinypass.com/checkout/template/trackShow"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/json",
+              "DownloadTime": 125,
+              "EventId": 1606,
+              "HttpStatus": 200,
+              "Size": 60,
+              "URL": "https://buy.tinypass.com/checkout/template/trackShow"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 1602,
+              "HttpStatus": 200,
+              "Size": 2177,
+              "URL": "https://buy.tinypass.com/widget/dist/template/css/img/fail-icon.png"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 78,
+              "EventId": 1520,
+              "HttpStatus": 200,
+              "Size": 146237,
+              "URL": "https://buy.tinypass.com/_sam/H4sIAAAAAAAAAD3IwQ6AIAgA0B9KmJ76m4bJHI6oBa7f7-bt7eEnrXNgEw8Mvh6lYBy-DHVaU95QpTqS9an0pgwFSkHJu63T-yTlgy1Nh-E_BjVxNVoAAAA?compressed=true&v=12.179.1"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 109,
+              "EventId": 1500,
+              "HttpStatus": 200,
+              "Size": 5426,
+              "URL": "https://buy.tinypass.com/showtemplate/general/loadTranslationMap?aid=BM6tVBSjXE&version=1618854563000&language=en_US"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 1489,
+              "HttpStatus": 200,
+              "Size": 9050,
+              "URL": "https://buy.tinypass.com/ng/common/i18n/platform-translation-map_en_US.js?version=12.179.1"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/html",
+              "DownloadTime": 32,
+              "EventId": 1480,
+              "HttpStatus": 200,
+              "Size": 3049,
+              "URL": "https://buy.tinypass.com/checkout/template/cacheableShow?aid=BM6tVBSjXE&templateId=OTYA8G8AXHQR&offerId=fakeOfferId&experienceId=EXD694QBPR5V&iframeId=offer_4ced0c562c6257591fd0-0&displayMode=inline&debug=true&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 78,
+              "EventId": 1473,
+              "HttpStatus": 200,
+              "Size": 4739,
+              "URL": "https://buy.tinypass.com/widget/dist/template/css/template.bundle.1.0.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/html",
+              "DownloadTime": 15,
+              "EventId": 1453,
+              "HttpStatus": 200,
+              "Size": 3091,
+              "URL": "https://buy.tinypass.com/checkout/template/cacheableShow?aid=BM6tVBSjXE&templateId=OTF6ZSW4VY3G&offerId=fakeOfferId&experienceId=EXPEFEMJ2B1B&iframeId=offer_e2fef953015106cf8c22-0&displayMode=inline&debug=true&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/json",
+              "DownloadTime": 391,
+              "EventId": 1442,
+              "HttpStatus": 200,
+              "Size": 288,
+              "URL": "https://buy.tinypass.com/api/v3/anon/template/loadTemplateContext?aid=BM6tVBSjXE"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/json",
+              "DownloadTime": 141,
+              "EventId": 1433,
+              "HttpStatus": 200,
+              "Size": 287,
+              "URL": "https://buy.tinypass.com/api/v3/anon/template/loadTemplateContext?aid=BM6tVBSjXE"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/html",
+              "DownloadTime": 125,
+              "EventId": 1419,
+              "HttpStatus": 200,
+              "Size": 2188,
+              "URL": "https://buy.tinypass.com/checkout/template/cacheableShow?aid=BM6tVBSjXE&templateId=OTI54N48LYD8&templateVariantId=OTVQPRP2BKVT2&offerId=fakeOfferId&experienceId=EXL4Q1FRM9BU&iframeId=offer_7928b8c1174289e86937-0&displayMode=inline&debug=true&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/html",
+              "DownloadTime": 94,
+              "EventId": 1412,
+              "HttpStatus": 200,
+              "Size": 2112,
+              "URL": "https://buy.tinypass.com/checkout/template/cacheableShow?aid=BM6tVBSjXE&templateId=OTVECH4XDFCU&offerId=fakeOfferId&experienceId=EXH65C0SLZUB&iframeId=offer_c6e26f7a9aa20f81c47c-0&displayMode=inline&debug=true&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/json",
+              "DownloadTime": 141,
+              "EventId": 1410,
+              "HttpStatus": 200,
+              "Size": 287,
+              "URL": "https://buy.tinypass.com/api/v3/anon/template/loadTemplateContext?aid=BM6tVBSjXE"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/json",
+              "DownloadTime": 125,
+              "EventId": 1408,
+              "HttpStatus": 200,
+              "Size": 286,
+              "URL": "https://buy.tinypass.com/api/v3/anon/template/loadTemplateContext?aid=BM6tVBSjXE"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 141,
+              "EventId": 1353,
+              "HttpStatus": 200,
+              "Size": 113,
+              "URL": "https://buy.tinypass.com/api/v3/anon/captcha/get.js?callback=jsonpCallback&aid=BM6tVBSjXE"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "104.17.183.177",
+          "IncludeInScript": true,
+          "Name": "api.tinypass.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 125,
+              "EventId": 786,
+              "HttpStatus": 200,
+              "Size": 1402,
+              "URL": "https://api.tinypass.com/xbuilder/experience/load?aid=BM6tVBSjXE"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "pubguru.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "52.84.138.105",
+          "IncludeInScript": true,
+          "Name": "cdn.pubguru.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 16,
+              "EventId": 1436,
+              "HttpStatus": 200,
+              "Size": 79238,
+              "URL": "https://cdn.pubguru.com/Spinner-1s-200px.gif"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1430,
+              "HttpStatus": 200,
+              "Size": 96,
+              "URL": "https://cdn.pubguru.com/flags/it.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1428,
+              "HttpStatus": 200,
+              "Size": 91,
+              "URL": "https://cdn.pubguru.com/flags/pl.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 15,
+              "EventId": 1425,
+              "HttpStatus": 200,
+              "Size": 260,
+              "URL": "https://cdn.pubguru.com/flags/sv.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1406,
+              "HttpStatus": 200,
+              "Size": 205,
+              "URL": "https://cdn.pubguru.com/flags/sr.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 15,
+              "EventId": 1403,
+              "HttpStatus": 200,
+              "Size": 98,
+              "URL": "https://cdn.pubguru.com/flags/ro.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1400,
+              "HttpStatus": 200,
+              "Size": 395,
+              "URL": "https://cdn.pubguru.com/flags/pt.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1398,
+              "HttpStatus": 200,
+              "Size": 130,
+              "URL": "https://cdn.pubguru.com/flags/fi.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1396,
+              "HttpStatus": 200,
+              "Size": 154,
+              "URL": "https://cdn.pubguru.com/flags/no.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 32,
+              "EventId": 1394,
+              "HttpStatus": 200,
+              "Size": 96,
+              "URL": "https://cdn.pubguru.com/flags/fr.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 109,
+              "EventId": 1349,
+              "HttpStatus": 200,
+              "Size": 108,
+              "URL": "https://cdn.pubguru.com/flags/nl.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 109,
+              "EventId": 1346,
+              "HttpStatus": 200,
+              "Size": 287,
+              "URL": "https://cdn.pubguru.com/flags/es.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 109,
+              "EventId": 1343,
+              "HttpStatus": 200,
+              "Size": 99,
+              "URL": "https://cdn.pubguru.com/flags/de.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1341,
+              "HttpStatus": 200,
+              "Size": 125,
+              "URL": "https://cdn.pubguru.com/flags/da.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1337,
+              "HttpStatus": 200,
+              "Size": 121,
+              "URL": "https://cdn.pubguru.com/flags/bg.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 47,
+              "EventId": 1335,
+              "HttpStatus": 200,
+              "Size": 434,
+              "URL": "https://cdn.pubguru.com/flags/en.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 32,
+              "EventId": 1331,
+              "HttpStatus": 200,
+              "Size": 47666,
+              "URL": "https://cdn.pubguru.com/v2/unified_vendor_list.json"
+            }
+          ],
+          "SSLCipher": "TLS_AES_128_GCM_SHA256",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "onesignal.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "104.18.225.52",
+          "IncludeInScript": true,
+          "Name": "onesignal.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 79,
+              "EventId": 992,
+              "HttpStatus": 200,
+              "Size": 1479,
+              "URL": "https://onesignal.com/api/v1/sync/a9149a36-9cfd-4ab7-bbdf-8ab6a1ee52be/web?callback=__jp0"
+            }
+          ],
+          "SSLCipher": "ECDHE-ECDSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "104.18.226.52",
+          "IncludeInScript": true,
+          "Name": "cdn.onesignal.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 0,
+              "EventId": 599,
+              "HttpStatus": 200,
+              "Size": 71114,
+              "URL": "https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js?v=151501"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 360,
+              "HttpStatus": 200,
+              "Size": 2805,
+              "URL": "https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+            }
+          ],
+          "SSLCipher": "ECDHE-ECDSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "nacion.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "92.122.92.11",
+          "IncludeInScript": true,
+          "Name": "www.nacion.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/octet-stream",
+              "DownloadTime": 31,
+              "EventId": 1647,
+              "HttpStatus": 200,
+              "Size": 101,
+              "URL": "https://www.nacion.com/manifest.json"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/x-icon",
+              "DownloadTime": 16,
+              "EventId": 1640,
+              "HttpStatus": 200,
+              "Size": 1150,
+              "URL": "https://www.nacion.com/pb/resources/favicon.ico?token=20170403_001"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 32,
+              "EventId": 1604,
+              "HttpStatus": 200,
+              "Size": 13853,
+              "URL": "https://www.nacion.com/gnfactory/especiales/recursos/images/otros/banneranual.gif"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 109,
+              "EventId": 1090,
+              "HttpStatus": 200,
+              "Size": 9810,
+              "URL": "https://www.nacion.com/resizer/syJKpjML3soDqnegxcIVLk236aw=/320x0/center/middle/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/gruponacion/W3WK4HFZJZFEDPU6ALVPGFMPE4.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 78,
+              "EventId": 1088,
+              "HttpStatus": 200,
+              "Size": 8974,
+              "URL": "https://www.nacion.com/resizer/Dr6HkeC8hFnfY6qG94g6hcfwgyE=/320x0/center/middle/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/gruponacion/QWD6G3PQUNEH7GSCDVSUGJVSFI.jpeg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 94,
+              "EventId": 1086,
+              "HttpStatus": 200,
+              "Size": 8080,
+              "URL": "https://www.nacion.com/resizer/AkjSWtuPy5Y8tLca1Lfxj6UQaGo=/320x0/center/middle/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/gruponacion/DMMYDF46CNBL7P3DCWHBGQBPGQ.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 1071,
+              "HttpStatus": 200,
+              "Size": 22058,
+              "URL": "https://www.nacion.com/resizer/g08QhhePKI_rLfgonL8ghj-pN-o=/480x320/center/top/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/gruponacion/5ZNYRSLEHBHAJDT6D5FK7QJHBM.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 1028,
+              "HttpStatus": 200,
+              "Size": 18706,
+              "URL": "https://www.nacion.com/resizer/ubFSFGjEQMet9hny-ynUuj6iP2I=/480x320/center/top/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/gruponacion/3WMYKUENVBAE7M2REQSDVNDKSA.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1014,
+              "HttpStatus": 200,
+              "Size": 34842,
+              "URL": "https://www.nacion.com/resizer/uHlTR7iXybYJnYEEpQeWyRgYTdA=/480x320/center/top/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/gruponacion/HBKUFDB6CVD65D5O7WWZO67HGE.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1012,
+              "HttpStatus": 200,
+              "Size": 40410,
+              "URL": "https://www.nacion.com/resizer/FmbSrUFz1YDB9raZKEuNUznSN7E=/480x320/center/top/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/gruponacion/H4VT2PF66JGMRNFLXTJDYZOTXA.jpg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 32,
+              "EventId": 1010,
+              "HttpStatus": 200,
+              "Size": 4227,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/footer/img/footer_suscribe.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 1008,
+              "HttpStatus": 200,
+              "Size": 1127,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/footer/img/footer_print.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 31,
+              "EventId": 1001,
+              "HttpStatus": 200,
+              "Size": 510,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/footer/img/app_home.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 31,
+              "EventId": 964,
+              "HttpStatus": 200,
+              "Size": 533,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/footer/img/footer_email.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 925,
+              "HttpStatus": 200,
+              "Size": 733,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/footer/img/in_home.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 31,
+              "EventId": 910,
+              "HttpStatus": 200,
+              "Size": 1232,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/footer/img/tw_home.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 63,
+              "EventId": 895,
+              "HttpStatus": 200,
+              "Size": 558,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/footer/img/fa_home.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 46,
+              "EventId": 893,
+              "HttpStatus": 200,
+              "Size": 1706,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/sections/perfil_logo.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 878,
+              "HttpStatus": 200,
+              "Size": 2976,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/sections/sabores_logo.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 871,
+              "HttpStatus": 200,
+              "Size": 2834,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/sections/logo_revistadominical.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 853,
+              "HttpStatus": 200,
+              "Size": 2560,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/sections/logo_ancora.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 841,
+              "HttpStatus": 200,
+              "Size": 2342,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/sections/logo_lndata.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 31,
+              "EventId": 818,
+              "HttpStatus": 200,
+              "Size": 1191,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/starblue.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 802,
+              "HttpStatus": 200,
+              "Size": 444,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/ico_video.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 31,
+              "EventId": 799,
+              "HttpStatus": 200,
+              "Size": 475,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/ico_video_black.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 796,
+              "HttpStatus": 200,
+              "Size": 419,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/gn-header-top-nav/img/inicio.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 63,
+              "EventId": 779,
+              "HttpStatus": 200,
+              "Size": 161599,
+              "URL": "https://www.nacion.com/gnfactory/especiales/2019/cambio-climatico-Costa-Rica/lanzador_BG03.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 31,
+              "EventId": 772,
+              "HttpStatus": 200,
+              "Size": 21695,
+              "URL": "https://www.nacion.com/gnfactory/especiales/2017/Lanzadores/image.jpg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 765,
+              "HttpStatus": 200,
+              "Size": 1528,
+              "URL": "https://www.nacion.com/gnfactory/especiales/2019/cambio-climatico-Costa-Rica/img/ui/logoNacion.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 47,
+              "EventId": 609,
+              "HttpStatus": 200,
+              "Size": 15418,
+              "URL": "https://www.nacion.com/gnfactory/comercial/todobusco/banner-ln/todobusco_300x140_secciones.jpg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 579,
+              "HttpStatus": 200,
+              "Size": 449,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/gn-header-top-nav/img/usuario.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 577,
+              "HttpStatus": 200,
+              "Size": 691,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/ads-dfp-jquery/ad-unit-slot/publicidad.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 31,
+              "EventId": 575,
+              "HttpStatus": 200,
+              "Size": 595,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/gn-header-top-nav/img/buscador.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 572,
+              "HttpStatus": 200,
+              "Size": 408,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/gn-header-top-nav/img/menu.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 63,
+              "EventId": 561,
+              "HttpStatus": 200,
+              "Size": 2352,
+              "URL": "https://www.nacion.com/gnfactory/comercial/todobusco/banner-ln/banner-todobusco.html"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 47,
+              "EventId": 559,
+              "HttpStatus": 200,
+              "Size": 2876,
+              "URL": "https://www.nacion.com/gnfactory/especiales/2019/cambio-climatico-Costa-Rica/lanzador.html"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 538,
+              "HttpStatus": 200,
+              "Size": 897,
+              "URL": "https://www.nacion.com/pb/gr/f/default/viafoura/piano-integration/render.js?_=bf850"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 32,
+              "EventId": 529,
+              "HttpStatus": 200,
+              "Size": 4281,
+              "URL": "https://www.nacion.com/pb/gr/p/default/r0BX3ccFu2OKws/render.js?_=c4616"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 522,
+              "HttpStatus": 200,
+              "Size": 1332,
+              "URL": "https://www.nacion.com/pb/gr/c/default/r0BX3ccFu2OKws/footjs/53e79152cf.js?_=991b0"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 32,
+              "EventId": 500,
+              "HttpStatus": 200,
+              "Size": 23946,
+              "URL": "https://www.nacion.com/pb/gr/c/default/r0BX3ccFu2OKws/footjs/62f8db0c46.js?_=991b0"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 47,
+              "EventId": 497,
+              "HttpStatus": 200,
+              "Size": 5765,
+              "URL": "https://www.nacion.com/pb/gr/c/default/r0BX3ccFu2OKws/js/7935335e7d.js?_=25421"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 495,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://www.nacion.com/pb/gr/c/default/r0BX3ccFu2OKws/footjs/da39a3ee5e.js?_=991b0"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 491,
+              "HttpStatus": 200,
+              "Size": 13046,
+              "URL": "https://www.nacion.com/pb/gr/c/default/r0BX3ccFu2OKws/js/d0ccb256d2.js?_=25421"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 469,
+              "HttpStatus": 200,
+              "Size": 2862,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/global/footer/img/gda_logo_dark.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 460,
+              "HttpStatus": 200,
+              "Size": 2466,
+              "URL": "https://www.nacion.com/resources/assets/la_nacion/img/gn_colors_dark.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 457,
+              "HttpStatus": 200,
+              "Size": 1908,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/nacion_home.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 453,
+              "HttpStatus": 200,
+              "Size": 10578,
+              "URL": "https://www.nacion.com/resizer/RC97jIjSYQewdouy7K9LlGY3AGs=/0x300/center/middle/filters:quality(100)/s3.amazonaws.com/arc-authors/gruponacion/bcf5f580-c547-44bc-a7ec-3302dd324bb2.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 16,
+              "EventId": 444,
+              "HttpStatus": 200,
+              "Size": 14730,
+              "URL": "https://www.nacion.com/resizer/tIk9VfM3MZSSiNFkXCf6hJm_Ebs=/0x300/center/middle/filters:quality(100)/s3.amazonaws.com/arc-authors/gruponacion/83a92453-33e3-45a7-bea0-20aa31f00baf.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 440,
+              "HttpStatus": 200,
+              "Size": 10562,
+              "URL": "https://www.nacion.com/resizer/3N0guQFzgOEyPy20_eqO7xkOStQ=/0x300/center/middle/filters:quality(100)/s3.amazonaws.com/arc-authors/gruponacion/46d682d5-dd7a-411f-abd7-c6bb40fd5547.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 436,
+              "HttpStatus": 200,
+              "Size": 10048,
+              "URL": "https://www.nacion.com/resizer/s2BDRdMRq7F0P-hGZ3kZkFTAp48=/0x300/center/middle/filters:quality(100)/s3.amazonaws.com/arc-authors/gruponacion/0e5a3f50-5ba2-46fc-8777-ef5b0b0b0ac7.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 428,
+              "HttpStatus": 200,
+              "Size": 454,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/watermark_xsmall.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 426,
+              "HttpStatus": 200,
+              "Size": 3394,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/headers/nocomacuento_header.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 344,
+              "HttpStatus": 200,
+              "Size": 5744,
+              "URL": "https://www.nacion.com/resizer/jdxAwJ4uVnlZtKpCloRyK9r0ooc=/157x105/center/middle/filters:quality(100)/d3hlpvman0fu3y.cloudfront.net/05-07-2021/t_7bbe7daff9b245808d23b1b0ddaf2061_name_Videos_2020_2_00_00_50_16_Imagen_fija173.jpg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 32,
+              "EventId": 342,
+              "HttpStatus": 200,
+              "Size": 8114,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/bv01.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 62,
+              "EventId": 335,
+              "HttpStatus": 200,
+              "Size": 3168,
+              "URL": "https://www.nacion.com/resizer/bW787FZdjn13uNOWZNAZXTGA_ho=/157x105/center/middle/filters:quality(100)/d3hlpvman0fu3y.cloudfront.net/05-07-2021/t_f664079c0162435289f936931b424455_name_MMD_VD_20210507_SCI_ZZZ_IngenuityAudio_99H9CB_es.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 312,
+              "HttpStatus": 200,
+              "Size": 12532,
+              "URL": "https://www.nacion.com/resizer/uqv9dZRfM0o8NjBlWcvzoavY0LE=/314x209/center/middle/filters:quality(100)/d3hlpvman0fu3y.cloudfront.net/05-07-2021/t_b4941a9b36614759b9d4170ccbbf7a5e_name_file_1920x1080_5400_v4_.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 309,
+              "HttpStatus": 200,
+              "Size": 584,
+              "URL": "https://www.nacion.com/pb/resources/gncomun/homepage/story/key.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 299,
+              "HttpStatus": 200,
+              "Size": 1807,
+              "URL": "https://www.nacion.com/pb/resources/assets/la_nacion/img/lanacion.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 296,
+              "HttpStatus": 200,
+              "Size": 9792,
+              "URL": "https://www.nacion.com/pb/gr/c/default/r0BX3ccFu2OKws/load_immediately/d59d437fd8.js?_=82112"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 31,
+              "EventId": 294,
+              "HttpStatus": 200,
+              "Size": 31174,
+              "URL": "https://www.nacion.com/pb/gr/c/default/r0BX3ccFu2OKws/css/e850b3dde2.css?_=e1be2"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 15,
+              "EventId": 290,
+              "HttpStatus": 200,
+              "Size": 13914,
+              "URL": "https://www.nacion.com/pb/gr/p/default/r0BX3ccFu2OKws/style.css?_=c4616"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 63,
+              "EventId": 206,
+              "HttpStatus": 200,
+              "Size": 47002,
+              "URL": "https://www.nacion.com/"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "matheranalytics.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "107.178.250.234",
+          "IncludeInScript": true,
+          "Name": "js.matheranalytics.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 31,
+              "EventId": 885,
+              "HttpStatus": 404,
+              "Size": 13,
+              "URL": "https://js.matheranalytics.com/s/ma4649/289549604/all/ml.js?cb=1563"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "m2d.m2.ai",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "13.227.173.4",
+          "IncludeInScript": true,
+          "Name": "m2d.m2.ai",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 32,
+              "EventId": 899,
+              "HttpStatus": 200,
+              "Size": 204292,
+              "URL": "https://m2d.m2.ai/pg.nacion.com.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_128_GCM_SHA256",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "jsdelivr.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "104.16.86.20",
+          "IncludeInScript": true,
+          "Name": "cdn.jsdelivr.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 514,
+              "HttpStatus": 200,
+              "Size": 10538,
+              "URL": "https://cdn.jsdelivr.net/npm/fingerprintjs2@2.1.0/fingerprint2.min.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "jquery.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "69.16.175.10",
+          "IncludeInScript": true,
+          "Name": "code.jquery.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 363,
+              "HttpStatus": 200,
+              "Size": 29811,
+              "URL": "https://code.jquery.com/jquery-2.2.4.min.js"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "gstatic.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.139",
+          "IncludeInScript": true,
+          "Name": "encrypted-tbn0.gstatic.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 47,
+              "EventId": 181,
+              "HttpStatus": 200,
+              "Size": 1818,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDX3J1cgiFTB3d_U6QODc3--36IIh3L16GtgarxUD6IX2VRSLyDn1_Zg&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 47,
+              "EventId": 177,
+              "HttpStatus": 200,
+              "Size": 1674,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPw9n400lA3gK3kKVUUWoKt8U0YyTmIApb9EmKNAU&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 16,
+              "EventId": 173,
+              "HttpStatus": 200,
+              "Size": 2067,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8oeU0O8P0XxwTwEGNCXzh27dpx0TJOUPB6YbFQukrQKnhUDSEBbdz6l0&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 171,
+              "HttpStatus": 200,
+              "Size": 2945,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbyXUq8aeyfeBPS4033oz9RfLYJ4HKgIAULNLFyHM&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 16,
+              "EventId": 163,
+              "HttpStatus": 200,
+              "Size": 2310,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCdISgGwZHjL2KU6fvwVG6ZqEC9krJBAyitnS77bSsXEk1Y8OWKnl0Krg&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 16,
+              "EventId": 157,
+              "HttpStatus": 200,
+              "Size": 1888,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq4ywMwIQDk20o3L70KG50NUgNJxPXQo2pRy3d_VjRZCQlXwIpRk8qwfU&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 16,
+              "EventId": 155,
+              "HttpStatus": 200,
+              "Size": 1947,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS-V3h1A5YiuwuuNnlTaFRiPw1xMMAQwg0-4NtxJ4BHBPaDc4xVQsNrYU&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 16,
+              "EventId": 153,
+              "HttpStatus": 200,
+              "Size": 1836,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR1jju1tcEqsQ3wQqNF0lqkxPcpF9rRbgSJxNKgHyV_p9LoI8rlHIYptA&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 151,
+              "HttpStatus": 200,
+              "Size": 921,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSDohQRyvKuCJoX35sXPxZXb-cftKkgj5eUnUenRQ&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 149,
+              "HttpStatus": 200,
+              "Size": 692,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-z4JCBX2Y_V_nwuxTcdkgUXBodiQUHYzmXqJnVM&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 15,
+              "EventId": 146,
+              "HttpStatus": 200,
+              "Size": 1486,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyiWP_Q0UaCGJT7guzkh7WIrVaqI_O6jbITs6o92g&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 15,
+              "EventId": 144,
+              "HttpStatus": 200,
+              "Size": 451,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHc-_daLHkgWkUAxfVhCzcvBitHx_i5ioqEQryNg0&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 15,
+              "EventId": 142,
+              "HttpStatus": 200,
+              "Size": 460,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7zHBCyMzjCh5BOAXTsQVI-sGc60YzQ75_jCvjB7Y&s=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 15,
+              "EventId": 140,
+              "HttpStatus": 200,
+              "Size": 481,
+              "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHY2D1_Fe5dnns_rulBDvzV6B9UXt4067guI4BKP8&s=10"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googletagmanager.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.97",
+          "IncludeInScript": true,
+          "Name": "www.googletagmanager.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 604,
+              "HttpStatus": 200,
+              "Size": 44540,
+              "URL": "https://www.googletagmanager.com/gtm.js?id=GTM-TSFC2S"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googlesyndication.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.154",
+          "IncludeInScript": true,
+          "Name": "pagead2.googlesyndication.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 15,
+              "EventId": 1534,
+              "HttpStatus": 200,
+              "Size": 5863,
+              "URL": "https://pagead2.googlesyndication.com/pagead/show_companion_ad.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googleoptimize.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.102",
+          "IncludeInScript": true,
+          "Name": "www.googleoptimize.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 369,
+              "HttpStatus": 200,
+              "Size": 35772,
+              "URL": "https://www.googleoptimize.com/optimize.js?id=GTM-TQS6N83"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googleapis.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.95",
+          "IncludeInScript": true,
+          "Name": "translate.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 15,
+              "EventId": 217,
+              "HttpStatus": 200,
+              "Size": 930,
+              "URL": "https://translate.googleapis.com/translate_a/l?client=chrome&hl=en&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.95",
+          "IncludeInScript": true,
+          "Name": "safebrowsing.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/x-protobuf",
+              "DownloadTime": 47,
+              "EventId": 775,
+              "HttpStatus": 200,
+              "Size": 82,
+              "URL": "https://safebrowsing.googleapis.com/v4/fullHashes:find?$req=ChwKDGdvb2dsZWNocm9tZRIMOTAuMC40NDMwLjkzEhsKDQgFEAYYASIDMDAxMAEQhpkLGgIYCYX4gckSGwoNCAEQBhgBIgMwMDEwARCx6ggaAhgJmHmlIBIbCg0IAxAGGAEiAzAwMTABEJXbCBoCGAlwDfG9EhsKDQgHEAYYASIDMDAxMAEQ06UJGgIYCVFWjbgSGQoNCAEQBhgBIgMwMDEwAxAUGgIYCcxdPEUSGgoNCAEQCBgBIgMwMDEwBBD6HxoCGAmlHUpyEhkKDQgJEAYYASIDMDAxMAYQAxoCGAkHXakpEhoKDQgPEAYYASIDMDAxMAEQlmUaAhgJCqAbpBIZCg0IChAIGAEiAzAwMTABEAYaAhgJA-FwdRIZCg0ICRAGGAEiAzAwMTABEB8aAhgJJ5e7kRIaCg0ICBAGGAEiAzAwMTABEIkMGgIYCeEZ4JwSGwoNCA0QBhgBIgMwMDEwARDWiAEaAhgJ12M_qhIbCg0IDhAGGAEiAzAwMTABEJW-BRoCGAkqPuq3EhoKDQgQEAYYASIDMDAxMAEQxwoaAhgJ7tLUIBosCAEIAwgFCAYIBwgICAkICggNCA4IDwgQEAEQCBoGCgRLMtmhIAEgAyAEIAY=&$ct=application/x-protobuf&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.95",
+          "IncludeInScript": true,
+          "Name": "fonts.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 62,
+              "EventId": 326,
+              "HttpStatus": 200,
+              "Size": 523,
+              "URL": "https://fonts.googleapis.com/css?family=Roboto:100&display=swap"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 62,
+              "EventId": 306,
+              "HttpStatus": 200,
+              "Size": 704,
+              "URL": "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.95",
+          "IncludeInScript": true,
+          "Name": "content-autofill.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/plain",
+              "DownloadTime": 31,
+              "EventId": 78,
+              "HttpStatus": 200,
+              "Size": 36,
+              "URL": "https://content-autofill.googleapis.com/v1/pages/ChNDaHJvbWUvOTAuMC40NDMwLjkzEhAJ9dVUO7IApPESBQ1pSEdH?alt=proto"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.94",
+          "IncludeInScript": true,
+          "Name": "clientservices.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/octet-stream",
+              "DownloadTime": 16,
+              "EventId": 33,
+              "HttpStatus": 200,
+              "Size": 306,
+              "URL": "https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=90"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "google.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.104",
+          "IncludeInScript": true,
+          "Name": "www.google.com",
+          "Port": 80,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 46,
+              "EventId": 27,
+              "HttpStatus": 302,
+              "Size": 231,
+              "URL": "http://www.google.com/"
+            }
+          ],
+          "SSLCipher": "None",
+          "SSLVersion": "None"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.104",
+          "IncludeInScript": true,
+          "Name": "www.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "text/html",
+              "DownloadTime": 63,
+              "EventId": 35,
+              "HttpStatus": 200,
+              "Size": 36282,
+              "URL": "https://www.google.com/?gws_rd=ssl"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.155",
+          "IncludeInScript": true,
+          "Name": "adservice.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 0,
+              "EventId": 92,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "https://adservice.google.com/adsid/google/ui"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "google-analytics.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.102",
+          "IncludeInScript": true,
+          "Name": "www.google-analytics.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 47,
+              "EventId": 865,
+              "HttpStatus": 200,
+              "Size": 19569,
+              "URL": "https://www.google-analytics.com/analytics.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "go-mpulse.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "23.2.24.31",
+          "IncludeInScript": true,
+          "Name": "s.go-mpulse.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 47,
+              "EventId": 583,
+              "HttpStatus": 200,
+              "Size": 51580,
+              "URL": "https://s.go-mpulse.net/boomerang/MUS2S-CNA8N-ZZLSU-SW4QW-8FUKY"
+            }
+          ],
+          "SSLCipher": "ECDHE-ECDSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "23.2.24.31",
+          "IncludeInScript": true,
+          "Name": "c.go-mpulse.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 937,
+              "HttpStatus": 200,
+              "Size": 51,
+              "URL": "https://c.go-mpulse.net/api/config.json?key=MUS2S-CNA8N-ZZLSU-SW4QW-8FUKY&d=www.nacion.com&t=5401398&v=1.632.0&if=&sl=0&si=pwznxnka74l-qsr7py&plugins=AK,ConfigOverride,Continuity,PageParams,IFrameDelay,AutoXHR,SPA,Angular,Backbone,Ember,History,RT,CrossDomain,BW,PaintTiming,NavigationTiming,ResourceTiming,Memory,CACHE_RELOAD,Errors,TPAnalytics,UserTiming,Akamai,LOGN&acao=&ak.ai=642718"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 62,
+              "EventId": 844,
+              "HttpStatus": 200,
+              "Size": 51,
+              "URL": "https://c.go-mpulse.net/api/config.json?key=MUS2S-CNA8N-ZZLSU-SW4QW-8FUKY&d=www.nacion.com&t=5401398&v=1.632.0&if=&sl=0&si=4ib4ud50t9b-qsr7py&plugins=AK,ConfigOverride,Continuity,PageParams,IFrameDelay,AutoXHR,SPA,Angular,Backbone,Ember,History,RT,CrossDomain,BW,PaintTiming,NavigationTiming,ResourceTiming,Memory,CACHE_RELOAD,Errors,TPAnalytics,UserTiming,Akamai,LOGN&acao=&ak.ai=642718"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 109,
+              "EventId": 790,
+              "HttpStatus": 200,
+              "Size": 51,
+              "URL": "https://c.go-mpulse.net/api/config.json?key=MUS2S-CNA8N-ZZLSU-SW4QW-8FUKY&d=www.nacion.com&t=5401398&v=1.632.0&if=&sl=0&si=ve8nfcg6hfo-qsr7py&plugins=AK,ConfigOverride,Continuity,PageParams,IFrameDelay,AutoXHR,SPA,Angular,Backbone,Ember,History,RT,CrossDomain,BW,PaintTiming,NavigationTiming,ResourceTiming,Memory,CACHE_RELOAD,Errors,TPAnalytics,UserTiming,Akamai,LOGN&acao=&ak.ai=642718"
+            }
+          ],
+          "SSLCipher": "ECDHE-ECDSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "facebook.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "157.240.221.16",
+          "IncludeInScript": true,
+          "Name": "connect.facebook.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/x-javascript",
+              "DownloadTime": 31,
+              "EventId": 767,
+              "HttpStatus": 200,
+              "Size": 1781,
+              "URL": "https://connect.facebook.net/en_US/sdk.js"
+            }
+          ],
+          "SSLCipher": "TLS_CHACHA20_POLY1305_SHA256",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "facebook.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "157.240.221.35",
+          "IncludeInScript": true,
+          "Name": "www.facebook.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 31,
+              "EventId": 1006,
+              "HttpStatus": 200,
+              "Size": 44,
+              "URL": "https://www.facebook.com/tr/?id=816768665036726&ev=PageView&dl=https%3A%2F%2Fwww.nacion.com%2F&rl=https%3A%2F%2Fwww.google.com%2F&if=false&ts=1620419545500"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 15,
+              "EventId": 962,
+              "HttpStatus": 200,
+              "Size": 44,
+              "URL": "https://www.facebook.com/tr/?id=816768665036726&ev=PixelInitialized&dl=https%3A%2F%2Fwww.nacion.com%2F&rl=https%3A%2F%2Fwww.google.com%2F&if=false&ts=1620419545500"
+            }
+          ],
+          "SSLCipher": "TLS_CHACHA20_POLY1305_SHA256",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "doubleclick.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.154",
+          "IncludeInScript": true,
+          "Name": "stats.g.doubleclick.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 0,
+              "EventId": 935,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-509Y5N8WXG&cid=1127036404.1620419546&gtm=2oe4s0&aip=1"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.193.154",
+          "IncludeInScript": true,
+          "Name": "securepubads.g.doubleclick.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 46,
+              "EventId": 1210,
+              "HttpStatus": 200,
+              "Size": 21224,
+              "URL": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "cxense.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "178.63.13.144",
+          "IncludeInScript": true,
+          "Name": "sp1cluster.cxense.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/javascript",
+              "DownloadTime": 47,
+              "EventId": 1392,
+              "HttpStatus": 200,
+              "Size": 47,
+              "URL": "https://sp1cluster.cxense.com/p1.js"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "178.63.13.144",
+          "IncludeInScript": true,
+          "Name": "scomcluster.cxense.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 46,
+              "EventId": 1518,
+              "HttpStatus": 200,
+              "Size": 43,
+              "URL": "https://scomcluster.cxense.com/Repo/rep.gif?ver=1&typ=pgv&rnd=koeryj5kh7o2n9dz&sid=1127341995055146355&loc=https%3A%2F%2Fwww.nacion.com%2F&new=0&arf=0&ltm=1620419545208&ref=https%3A%2F%2Fwww.google.com%2F&tzo=0&res=1266x712&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=koerymftd1dbvwlo&ckp=koeryjbphz53fdla&glb=&wsz=1266x601&cp_estadoUsuario=ANONIMO&cp_EF_ACCESS=false&cp_LT_ACCESS=false&cp_LN_ACCESS=false&cst=2r0yzlyl8dqyq20gu3ymwix2tp"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "23.40.217.15",
+          "IncludeInScript": true,
+          "Name": "scdn.cxense.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/x-javascript",
+              "DownloadTime": 47,
+              "EventId": 1329,
+              "HttpStatus": 200,
+              "Size": 27200,
+              "URL": "https://scdn.cxense.com/cx.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 31,
+              "EventId": 1255,
+              "HttpStatus": 200,
+              "Size": 219,
+              "URL": "https://scdn.cxense.com/sp1.html"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/x-javascript",
+              "DownloadTime": 32,
+              "EventId": 716,
+              "HttpStatus": 200,
+              "Size": 27200,
+              "URL": "https://scdn.cxense.com/cx.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "178.63.13.144",
+          "IncludeInScript": true,
+          "Name": "id.cxense.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/javascript",
+              "DownloadTime": 47,
+              "EventId": 1543,
+              "HttpStatus": 200,
+              "Size": 118,
+              "URL": "https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22koeryjbphz53fdla%22%7D%2C%7B%22type%22%3A%22lst%22%2C%22id%22%3A%222r0yzlyl8dqyq20gu3ymwix2tp%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%222r0yzlyl8dqyq20gu3ymwix2tp%22%7D%5D%2C%22siteId%22%3A%221127341995055146355%22%2C%22location%22%3A%22https%3A%2F%2Fwww.nacion.com%2F%22%7D&callback=cXJsonpCBkoerynwcvloa84id"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "147.75.85.120",
+          "IncludeInScript": true,
+          "Name": "api.cxense.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/javascript",
+              "DownloadTime": 16,
+              "EventId": 1021,
+              "HttpStatus": 200,
+              "Size": 77,
+              "URL": "https://api.cxense.com/profile/user/segment?callback=cXJsonpCBkoeryjc1wo6ywsgk&persisted=b15320daa6193bf072303805114e1600484395c8&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22koeryjbphz53fdla%22%2C%22type%22%3A%22cx%22%7D%5D%7D"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/javascript",
+              "DownloadTime": 31,
+              "EventId": 1004,
+              "HttpStatus": 200,
+              "Size": 77,
+              "URL": "https://api.cxense.com/profile/user/segment?callback=cXJsonpCBkoeryjbtd74gwxer&persisted=b15320daa6193bf072303805114e1600484395c8&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22koeryjbphz53fdla%22%2C%22type%22%3A%22cx%22%7D%5D%7D"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "cloudflare.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "104.16.19.94",
+          "IncludeInScript": true,
+          "Name": "cdnjs.cloudflare.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 516,
+              "HttpStatus": 200,
+              "Size": 1594,
+              "URL": "https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.17.0/js/md5.min.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "chartbeat.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "54.210.109.30",
+          "IncludeInScript": true,
+          "Name": "ping.chartbeat.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 62,
+              "EventId": 1177,
+              "HttpStatus": 200,
+              "Size": 43,
+              "URL": "https://ping.chartbeat.net/ping?h=nacion.com&p=%2F&u=CHrX6QCGdZzDBihEwB&d=nacion.com&g=45503&g0=Sin%20seccion&g1=Sin%20autor&n=1&f=00001&c=0&x=0&m=0&y=8528&o=1249&w=601&j=45&R=1&W=0&I=0&E=0&e=0&r=https%3A%2F%2Fwww.google.com%2F&b=3631&t=Bu7fFvBdG42OBAgDYDCtPhlkBYfFPv&V=126&i=Noticias%20de%20Costa%20Rica%20-%20La%20Naci%C3%B3n&tz=0&_acct=anon&sn=1&sv=DxhkT5DDJn2BC79bTxCfdLZhzIlU4&sr=https%3A%2F%2Fwww.google.com%2F&sd=1&im=067b07ff&_"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "chartbeat.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "99.86.121.231",
+          "IncludeInScript": true,
+          "Name": "static.chartbeat.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/x-javascript",
+              "DownloadTime": 16,
+              "EventId": 859,
+              "HttpStatus": 200,
+              "Size": 9306,
+              "URL": "https://static.chartbeat.com/js/chartbeat_mab.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/x-javascript",
+              "DownloadTime": 16,
+              "EventId": 857,
+              "HttpStatus": 200,
+              "Size": 14286,
+              "URL": "https://static.chartbeat.com/js/chartbeat.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_128_GCM_SHA256",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "199.232.26.202",
+          "IncludeInScript": true,
+          "Name": "mab.chartbeat.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 999,
+              "HttpStatus": 200,
+              "Size": 121,
+              "URL": "https://mab.chartbeat.com/mab_strategy/headline_testing/get_strategy/?host=nacion.com&domain=nacion.com&path=%2F"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "bootstrapcdn.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "104.18.10.207",
+          "IncludeInScript": true,
+          "Name": "maxcdn.bootstrapcdn.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 16,
+              "EventId": 321,
+              "HttpStatus": 200,
+              "Size": 6663,
+              "URL": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "arcpublishing.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "13.224.78.52",
+          "IncludeInScript": true,
+          "Name": "cloudfront-us-east-1.images.arcpublishing.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 31,
+              "EventId": 422,
+              "HttpStatus": 200,
+              "Size": 21797,
+              "URL": "https://cloudfront-us-east-1.images.arcpublishing.com/gruponacion/QRED4UE2QZCMVDWGLR6UZZWKCI.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 15,
+              "EventId": 410,
+              "HttpStatus": 200,
+              "Size": 4672,
+              "URL": "https://cloudfront-us-east-1.images.arcpublishing.com/gruponacion/EA3562JIXZECLMM4UCYFJD4VXA.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 31,
+              "EventId": 377,
+              "HttpStatus": 200,
+              "Size": 2286,
+              "URL": "https://cloudfront-us-east-1.images.arcpublishing.com/gruponacion/IPWROBPVZRDRZBFNX3ETHXEGFA.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 31,
+              "EventId": 373,
+              "HttpStatus": 200,
+              "Size": 3547,
+              "URL": "https://cloudfront-us-east-1.images.arcpublishing.com/gruponacion/TVUSQ7J3FZAZDNMSZR3NL6MXHE.jpg"
+            }
+          ],
+          "SSLCipher": "TLS_AES_128_GCM_SHA256",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "analytics2.m2.ai",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "18.195.108.174",
+          "IncludeInScript": true,
+          "Name": "analytics2.m2.ai",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/plain",
+              "DownloadTime": 94,
+              "EventId": 1235,
+              "HttpStatus": 200,
+              "Size": 28,
+              "URL": "https://analytics2.m2.ai/stream?beacon=immediate"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 31,
+              "EventId": 1233,
+              "HttpStatus": 200,
+              "Size": 135,
+              "URL": "https://analytics2.m2.ai/?device=desktop&publisher=www.nacion.com"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "amazonaws.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "52.217.83.92",
+          "IncludeInScript": true,
+          "Name": "arc-anglerfish-arc2-prod-gruponacion.s3.amazonaws.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 78,
+              "EventId": 486,
+              "HttpStatus": 200,
+              "Size": 27621,
+              "URL": "https://arc-anglerfish-arc2-prod-gruponacion.s3.amazonaws.com/public/N2CECTPP5VB75FVPZXY4YED7KA.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 125,
+              "EventId": 438,
+              "HttpStatus": 200,
+              "Size": 5024,
+              "URL": "https://arc-anglerfish-arc2-prod-gruponacion.s3.amazonaws.com/public/XXHKHHSQYVBC7CLXNAGYWTYRDY.jpg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 109,
+              "EventId": 433,
+              "HttpStatus": 200,
+              "Size": 11805,
+              "URL": "https://arc-anglerfish-arc2-prod-gruponacion.s3.amazonaws.com/public/7RBFHHUCXRFHFI2IOT3XGTT7QY.jpg"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    }
+  ],
+  "WebSocket": {
+    "IncludeInScript": false,
+    "IsScriptIncludeWebSocket": true
+  },
+  "NumberOfCorrelations": 6
+}

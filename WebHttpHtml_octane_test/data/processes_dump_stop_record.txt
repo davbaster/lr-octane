@@ -1,0 +1,182 @@
+Failed to get information of process Id: 0
+Failed to get information of process Id: 4
+Failed to get information of process Id: 360
+Failed to get information of process Id: 504
+Failed to get information of process Id: 568
+Failed to get information of process Id: 576
+Failed to get information of process Id: 604
+Failed to get information of process Id: 664
+Failed to get information of process Id: 672
+Failed to get information of process Id: 732
+Failed to get information of process Id: 764
+Failed to get information of process Id: 848
+Failed to get information of process Id: 892
+Failed to get information of process Id: 908
+Failed to get information of process Id: 948
+Failed to get information of process Id: 344
+Failed to get information of process Id: 652
+Failed to get information of process Id: 1176
+Failed to get information of process Id: 1216
+Failed to get information of process Id: 1260
+Failed to get information of process Id: 1284
+Failed to get information of process Id: 1512
+Failed to get information of process Id: 1532
+Failed to get information of process Id: 1644
+Failed to get information of process Id: 1704
+Failed to get information of process Id: 1724
+Failed to get information of process Id: 1732
+Failed to get information of process Id: 1740
+Failed to get information of process Id: 1784
+Failed to get information of process Id: 3280
+Failed to get information of process Id: 3316
+Failed to get information of process Id: 3348
+Failed to get information of process Id: 3388
+Failed to get information of process Id: 3496
+Failed to get information of process Id: 3516
+Failed to get information of process Id: 4040
+Failed to get information of process Id: 4084
+Failed to get information of process Id: 2264
+Failed to get information of process Id: 2348
+Failed to get information of process Id: 2760
+Failed to get information of process Id: 4548
+Failed to get information of process Id: 4652
+Failed to get information of process Id: 2492
+Failed to get information of process Id: 6556
+Failed to get information of process Id: 5968
+Failed to get information of process Id: 6268
+Failed to get information of process Id: 2580
+Failed to get information of process Id: 4904
+Failed to get information of process Id: 7072
+Failed to get information of process Id: 6976
+Failed to get information of process Id: 6576
+Failed to get information of process Id: 6000
+Failed to get information of process Id: 3480
+Failed to get information of process Id: 880
+PROCESS 0x110c      vugen.exe
+PROCESS 0x14c4      rundll32.exe
+PROCESS 0x14d4      rundll32.exe
+Failed to get information of process Id: 3732
+Failed to get information of process Id: 7020
+PROCESS 0x109c      vugen.exe
+PROCESS 0x1264      rundll32.exe
+Failed to get information of process Id: 3268
+Failed to get information of process Id: 1352
+Failed to get information of process Id: 5372
+Failed to get information of process Id: 3604
+Failed to get information of process Id: 1764
+Failed to get information of process Id: 4944
+Failed to get information of process Id: 2108
+Failed to get information of process Id: 6860
+Failed to get information of process Id: 4656
+Failed to get information of process Id: 6552
+Failed to get information of process Id: 1200
+Failed to get information of process Id: 3840
+PROCESS 0x1914      hp.uft.chrome.nativemessaginghost.exe
+		1                             C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\HP.UFT.Chrome.NativeMessagingHost.exe
+		6.3.9600.18217 (winblue_ltsb.160124-0053)C:\Windows\SYSTEM32\ntdll.dll
+		6.3.9600.18217 (winblue_ltsb.160124-0053)C:\Windows\SYSTEM32\KERNEL32.DLL
+		6.3.9600.18217 (winblue_ltsb.160124-0053)C:\Windows\SYSTEM32\KERNELBASE.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\SHLWAPI.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\USER32.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\ADVAPI32.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\ole32.dll
+		6.3.9600.18666                C:\Windows\SYSTEM32\OLEAUT32.dll
+		14.00.24215.1 built by: VCTOOLSD14ULDRC:\Windows\SYSTEM32\MSVCP140.dll
+		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\PSAPI.DLL
+		1                             C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\WIAgentLogFileU.dll
+		14.00.24215.1 built by: VCTOOLSD14ULDRC:\Windows\SYSTEM32\VCRUNTIME140.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-runtime-l1-1-0.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-heap-l1-1-0.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-stdio-l1-1-0.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-string-l1-1-0.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-utility-l1-1-0.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-filesystem-l1-1-0.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-math-l1-1-0.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-locale-l1-1-0.dll
+		7.0.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\msvcrt.dll
+		6.3.9600.18666 (winblue_ltsb.170415-2040)C:\Windows\SYSTEM32\combase.dll
+		6.3.9600.18790 (winblue_ltsb.170810-1616)C:\Windows\SYSTEM32\GDI32.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\sechost.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\RPCRT4.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-multibyte-l1-1-0.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-convert-l1-1-0.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-time-l1-1-0.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-environment-l1-1-0.dll
+		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\SspiCli.dll
+		10.0.10586.788 (th2_release_sec.170113-1732)C:\Windows\SYSTEM32\ucrtbase.DLL
+		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\CRYPTBASE.dll
+		6.3.9600.18344 (winblue_ltsb.160518-1031)C:\Windows\SYSTEM32\bcryptPrimitives.dll
+		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\system32\IMM32.DLL
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\MSCTF.dll
+		12.63.146.0                   C:\PCHOST\bin\bbhook.dll
+		12.60.971.0                   C:\PCHOST\bin\api_trapper.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\mosifs32.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\PathResolver.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\runtime_code_injection_lib.dll
+		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\VERSION.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\wrapicu.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\USERENV.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\thrdutil.dll
+		6.3.9600.17031 (winblue_gdr.140221-1952)C:\Windows\SYSTEM32\SHELL32.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\IPHLPAPI.DLL
+		55, 1, 0, 0                   C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\icuuc55.dll
+		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\profapi.dll
+		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\NSI.dll
+		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\WINNSI.DLL
+		55, 1, 0, 0                   C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\icudt55.dll
+		12.63.399.0                   C:\PCHOST\bin\api_sock_proxy.dll
+		                              C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\pcre-8.42.dll
+		12.60.971.0                   C:\PCHOST\bin\VnpLog.dll
+		12.63.399.0                   C:\PCHOST\bin\MicSocket.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\WS2_32.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\ipng_utils.dll
+		12.60.971.0                   C:\PCHOST\bin\VnpUtils.dll
+		1.1.1                         C:\PCHOST\bin\libcrypto-lt-1_1.dll
+		1.1.1                         C:\PCHOST\bin\libssl-lt-1_1.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\lrun50.dll
+		6.3.9600.18370 (winblue_ltsb.160601-0600)C:\Windows\SYSTEM32\CRYPT32.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\bcrypt.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\WSOCK32.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\trans.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\msg_handler.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\merc_uuid.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\mlib_ds.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\comm_util.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\runlogic.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\parameng.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\libxdrutil.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\xdr.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\faserver.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\run_time_context.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\wrapzlib.dll
+		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\MSASN1.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\config.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\lr_exp.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\trans_server.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\libdatatypes.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\data_types_ifs.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\rtc_protocol.dll
+		10.0.16299.91 (WinBuild.160101.0800)C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\dbghelp.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\timediff_ext.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\jrequestor_srv.dll
+		2020.0.0.267                  C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\dc_requests.dll
+		10.0.10240.16390 (th1_st1.150714-1601)C:\Windows\SYSTEM32\api-ms-win-crt-private-l1-1-0.dll
+		10.0.16299.91 (WinBuild.160101.0800)C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\dbgcore.DLL
+		12.60.971.0                   C:\PCHOST\bin\api_http_filter.dll
+		                              C:\PCHOST\bin\WebHTTP2Util.dll
+		1.31.90.0 (MSVC release)      C:\PCHOST\bin\nghttp2.dll
+		12.60.971.0                   C:\PCHOST\bin\api_trapper1.dll
+		12.60.971.0                   C:\PCHOST\bin\WebMultiInProcNotify.dll
+		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\kernel.appcore.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\system32\uxtheme.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\system32\dwmapi.dll
+		12.60.971.0                   C:\PCHOST\Bin\type_info_pool.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\sxs.dll
+		2001.12.10530.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\clbcatq.dll
+		1                             C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\WICommon.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\ntmarta.dll
+Failed to get information of process Id: 6584
+Failed to get information of process Id: 6696
+Failed to get information of process Id: 6740
+Failed to get information of process Id: 156
+Failed to get information of process Id: 2144

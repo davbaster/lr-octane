@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Last-Modified: Wed, 29 Aug 2012 13:33:36 GMT
+Server: AkamaiNetStorage
+Content-Length: 219
+Cache-Control: max-age=864000
+Expires: Mon, 17 May 2021 20:32:40 GMT
+Date: Fri, 07 May 2021 20:32:40 GMT
+Connection: keep-alive
+Content-Type: text/html
+Content-Encoding: gzip
+Access-Control-Allow-Origin: *
+Vary: Accept-Encoding
+

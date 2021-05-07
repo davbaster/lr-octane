@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Date: Fri, 07 May 2021 20:32:40 GMT
+Content-Type: text/plain
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: Apache/2.4.29 (Ubuntu)
+X-Frame-Options: DENY
+Access-Control-Allow-Origin: https://www.nacion.com
+Vary: Origin,Accept-Encoding
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Content-Encoding: gzip
+Access-Control-Expose-Headers: X-M2
+X-M2: 1
+

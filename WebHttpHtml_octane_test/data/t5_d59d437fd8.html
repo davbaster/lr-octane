@@ -1,0 +1,566 @@
+(function(){if(window.ARC&&window.ARC.Tools&&window.ARC.Tools.logger)return;window.ARC=window.ARC||{};window.ARC.Tools=window.ARC.Tools||{};var T=ARC.Tools;var i=0;var location=document.location.toString();if(!Date.now)Date.now=function now(){return(new Date).getTime()};var start=Date.now();T.Time={start:function(){return start},elapsed:function(){return Date.now()-start},toHuman:function(milli){if(milli<1E3)return milli+"ms";var string="";var remain=milli;var ms=remain%1E3;remain=(remain-ms)/1E3;
+if(ms<10)ms="00"+ms;else if(ms<100)ms="0"+ms;var s=remain%60;remain=(remain-s)/60;string=s+"."+ms+"s";if(remain===0)return string;var min=remain%60;remain=(remain-min)/60;string=min+(min>1?" minutes ":" minute ")+string;if(remain===0)return string;var h=remain%24;remain=(remain-h)/24;string=h+(h>1?" hours ":" hour ")+string;if(remain===0)return string;var d=remain;string=d+(d>1?" days ":" day ")+string;return string}};var origConsole=window.console;var useConsole=!!location.match(/console=all/);var loggers=
+[];function logger(namespace){if(!namespace||namespace==="")namespace="DEFAULT";var counter=0;var newname=namespace;while(loggers[newname]){counter=counter+1;newname=namespace+"_"+counter}this.namespace=newname;loggers[newname]=this;this.groupLevel=0;this.messages=[]}logger.prototype.originalConsole=origConsole;logger.prototype.loggers=function(){return loggers};logger.prototype.forceLogging=function(){useConsole=true};logger.prototype.forceStartTime=function(time){start=time};ARC.Tools.logger=logger;
+function writelog(that,method,args){var argsArray=[];var savedArray=[];for(var i=0;i<args.length;i++){argsArray.push(args[i]);savedArray.push(args[i])}if(method.match(/^(log|info|warn|error|debug|trace|_exception)$/))if(argsArray.length>=2&&typeof argsArray[argsArray.length-1]=="function"){that.group.apply(that,argsArray.slice(0,argsArray.length-1));argsArray[argsArray.length-1]();that.groupEnd();return}argsArray.unshift("["+that.namespace+"]");var padding="";for(i=0;i<that.groupLevel;i++)padding=
+padding+"    ";argsArray.unshift(padding);savedArray.unshift(padding);argsArray.push("("+T.Time.toHuman(T.Time.elapsed())+")");savedArray.push("("+T.Time.toHuman(T.Time.elapsed())+")");var forceConsole=window.localStorage&&window.localStorage.getItem&&(window.localStorage.getItem("console-show-"+that.namespace)||window.localStorage.getItem("console-show-"+that.namespace.toLowerCase()));var nameRegex=new RegExp("[?\x26]console\x3d"+that.namespace,"i");forceConsole=forceConsole||location.match(nameRegex);
+var allString=true;for(i=0;i<argsArray.length;i++)if(typeof argsArray[i]!="string")allString=false;if(allString)argsArray=[argsArray.join(" ")];if((useConsole||forceConsole)&&origConsole&&origConsole[method])if(method=="group")try{origConsole.log.apply(origConsole,argsArray)}catch(e){origConsole.log(argsArray)}else try{origConsole[method].apply(origConsole,argsArray)}catch(e){origConsole[method](argsArray)}var flattened="";for(i=0;i<savedArray.length;i++)if(savedArray[i]===null)savedArray[i]="null";
+else if(typeof savedArray[i]=="undefined")savedArray[i]="undefined";else savedArray[i]=savedArray[i].toString();that.messages.push(savedArray.join(" "));if(that.messages.length>100)that.messages.splice(0,1)}logger.prototype.text=function(){return this.messages.join("\n")};logger.prototype.getMessages=function(namespace){if(origConsole&&loggers[namespace])origConsole.log(loggers[namespace].text())};var logMethods=["log","info","warn","error","debug","trace","_exception"];function _logMethodsHelper(method){return function(){writelog(this,
+method,arguments)}}for(i=0;i<logMethods.length;i++)logger.prototype[logMethods[i]]=_logMethodsHelper(logMethods[i]);logger.prototype.group=function(){writelog(this,"group",arguments);this.groupLevel=this.groupLevel+1};logger.prototype.groupEnd=function(){this.groupLevel=this.groupLevel-1};logger.prototype.groupCollapsed=logger.prototype.group;var otherMethods=["assert","count","dir","dirxml","table","time","timeEnd","timeStamp","profile","profileEnd"];function _otherMethodsHelper(method){return function(){if(useConsole&&
+origConsole&&origConsole[method])try{origConsole[method].apply(origConsole,arguments)}catch(e){originalConsole[method](arguments)}}}for(i=0;i<otherMethods.length;i++)logger.prototype[otherMethods[i]]=_otherMethodsHelper(otherMethods[i]);if(!location.match(/[?&]console=orig/))window.console=new T.logger})();
+(function(){if(window.ARC&&window.ARC.Tools&&window.ARC.Tools.timedToken)return;window.ARC=window.ARC||{};window.ARC.Tools=window.ARC.Tools||{};ARC.Tools.timedToken=function(config){var config=config||{unit:"minute",increment:1},unit=config.unit.slice(-1)=="s"?config.unit.slice(0,-1):config.unit,increment=config.increment,numberOfSeconds={"second":1,"minute":60,"hour":3600,"day":86400},date=new Date;var coeff=1E3*numberOfSeconds[unit]*increment;var rounded=(new Date(Math.round(date.getTime()/coeff)*
+coeff)).getTime();return rounded}})();
+;
+tp = window.tp || [];
+
+var GNSSO = (function () {
+    'use strict';
+
+    const SECOND_IN_HOUR = 3600;
+
+    var _SESSION_TYPE_ANONYMOUS = "anonymous",
+        _SESSION_TYPE_REGISTERED = "registered",
+        _SESSION_TYPE_SUBSCRIBED = "subscribed",
+        _PROFILE_STORE_KEY = "_sso_profile",
+        _PROFILE_EXTENDED_STORE_KEY = "_sso_profile_extended",
+        _version = "20200804.0800",
+        _refererStorageKey = 'GNSSO_referer',
+        _journeyStoreKey = "GNSSO_journey",
+        _logger = null,
+        _profileData = null,
+        _profileDataExtended = null,
+        _gndebug = _getCookie("gndebug");
+
+    // --------------------------------------------------------------------------
+    // Singleton
+    // Private methods and variables
+    function _d(m, logId, style) {
+        // Si aun no tenemos seteado el logger, lo hacemos
+        if (null === _logger) {
+            if (typeof ARC !== "undefined" && typeof ARC.Tools !== "undefined" && typeof ARC.Tools.logger === "function") {
+                _logger = new ARC.Tools.logger('GNSSO');
+                _logger = _logger.originalConsole;
+            }
+
+            if (null === _logger) {
+                _logger = window.console;
+            }
+        }
+
+        if (null !== _logger && "true" === _gndebug) {
+            if (typeof logId === 'undefined' || null === logId || "" === logId) {
+                logId = "GNSSO";
+            }
+
+            if (typeof style === 'undefined' || null === style || "" === style) {
+                style = "";
+            }
+
+            if (typeof m === "object") {
+                _logger.log("[" + logId + "] " + JSON.stringify(m));
+            } else {
+                if (typeof m === "string" && -1 !== m.indexOf("%c") && "" !== style) {
+                    _logger.log("[" + logId + "] " + m, style);
+                } else {
+                    _logger.log("[" + logId + "] " + m);
+                }
+            }
+        }
+    }
+    // --------------------------------------------------------------------------
+    function _getUserProperty(propertyName) {
+        if (typeof _profileData === "object" && null !== _profileData && _profileData.hasOwnProperty(propertyName)) {
+            _d("User profile property (" + propertyName + ") found with the value (" + _profileData[propertyName] + ")");
+            return _profileData[propertyName];
+        }
+        // Si no tenemos la propiedad en los datos basicos del usuario, los buscamos en los datos extendidos
+        if (typeof _profileDataExtended === "object" && null !== _profileDataExtended && _profileDataExtended.hasOwnProperty(propertyName)) {
+            _d("User profile extended property (" + propertyName + ") found with the value (" + _profileDataExtended[propertyName] + ")");
+            return _profileDataExtended[propertyName];
+        }
+
+        return null;
+    }
+    // --------------------------------------------------------------------------
+    function _deleteStoreProfile() {
+        // Procedemos a borrar cualquier dato almacenado que pudieramos tener
+        _store(_PROFILE_STORE_KEY, null);
+        _store(_PROFILE_EXTENDED_STORE_KEY, null);
+
+        // Y se limpian las variables que contienen datos de profile del usuario
+        _profileData = null;
+        _profileDataExtended = null;
+    }
+    // --------------------------------------------------------------------------
+    function _setCookie(name, value, days) {
+        var expires = "",
+            cookieValue = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        cookieValue = name + "=" + escape(value) + expires + "; path=/";
+        _d("Set cookie " + cookieValue);
+        document.cookie = cookieValue;
+    }
+    // --------------------------------------------------------------------------
+    function _getCookie(name) {
+        var re = new RegExp(name + "=([^;]+)");
+        var value = re.exec(document.cookie);
+        return (value !== null) ? unescape(value[1]) : null;
+    }
+    // --------------------------------------------------------------------------
+    function _deleteCookie(name) {
+        _d("Delete cookie " + name);
+        document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/';
+    }
+    // --------------------------------------------------------------------------
+    /**
+     * Set New / Modify:
+     *   _store('my_key', 'some_value');
+     *
+     * Retrieve:
+     *   _store('my_key');
+     *
+     * Delete / Remove:
+     *   _store('my_key', null);
+     */
+    function _store(key, value) {
+        var lsSupport = false;
+        // Check for native support
+        if (localStorage) {
+            lsSupport = true;
+        }
+        // If value is detected, set new or modify store
+        if (typeof value !== "undefined" && value !== null) {
+            // Convert object values to JSON
+            if (typeof value === 'object') {
+                value = JSON.stringify(value);
+            }
+            // Set the store
+            if (lsSupport) { // Native support
+                localStorage.setItem(key, value);
+                _d("Store into localStorage key: " + key + ", value: " + value);
+            } else { // Use Cookie
+                _setCookie(key, value, 30);
+                _d("Store into cookie key: " + key + ", value: " + value);
+            }
+        }
+        // No value supplied, return value
+        if (typeof value === "undefined") {
+            var data = null;
+            // Get value
+            if (lsSupport) { // Native support
+                data = localStorage.getItem(key);
+                _d("Get from localStorage key: " + key + ", value: " + data);
+            } else { // Use cookie
+                data = _getCookie(key);
+                _d("Get from cookie key: " + key + ", value: " + data);
+            }
+            // Try to parse JSON...
+            try {
+                data = JSON.parse(data);
+            } catch (e) {
+                data = data;
+            }
+            return data;
+        }
+        // Null specified, remove store
+        if (value === null) {
+            if (lsSupport) { // Native support
+                localStorage.removeItem(key);
+                _d("Delete from localStorage key: " + key);
+            } else { // Use cookie
+                _deleteCookie(key);
+                _d("Delete from cookie key: " + key);
+            }
+        }
+    }
+    // --------------------------------------------------------------------------
+    function _generateToken(tokenLength) {
+        var text = "",
+            possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        if (typeof tokenLength === 'undefined') {
+            tokenLength = 32;
+        }
+        for (var i = 0; i <= tokenLength; i++) {
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+        }
+        return text;
+    }
+    // --------------------------------------------------------------------------
+    function _getQSParameterByName(name, defaultValue, url) {
+        if (typeof defaultValue === 'undefined') {
+            defaultValue = null;
+        }
+        if (typeof url === 'undefined') {
+            url = window.location.href;
+        }
+
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) {
+            return defaultValue;
+        }
+        if (!results[2]) {
+            return defaultValue;
+        }
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    // --------------------------------------------------------------------------
+    function _getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    // --------------------------------------------------------------------------
+    function _loadExtendedUser() {
+        if (tp.pianoId.isUserValid()) {
+            tp.pianoId.loadExtendedUser({
+                extendedUserLoaded: function (data) {
+                    _profileDataExtended = {};
+                    for (var i in data.custom_field_values) {
+                        let fieldName = data.custom_field_values[i].field_name,
+                            fieldValue = data.custom_field_values[i].value;
+                            _profileDataExtended[fieldName] = fieldValue;
+                    }
+                    // Guardamos los datos extendidos de este usuario
+                    _store(_PROFILE_EXTENDED_STORE_KEY, _profileDataExtended);
+                },
+                formName: "gn_js_load_extended_user"
+            });
+        } else {
+            // Procedemos a borrar cualquier dato almacenado que pudieramos tener
+            _deleteStoreProfile();
+        }
+    }
+    // --------------------------------------------------------------------------
+    function _validateSessionToken(callback) {
+        // Si tenemos un usuario logueado en Piano
+        if (tp.pianoId.isUserValid()) {
+            // Procedemos a validar si la posible info que tenemos almacenada del usuario
+            // sigue siendo valida
+
+            // Obtenemos el token de session de Piano
+            var _tokenValue = _getCookie("__utp");
+
+            // Sino tenemos informacion almacenada de esta session; o si esta ya expiro
+            if (null === _profileData || _profileData.ssoexp < (Date.now() / 1000)) {
+                // Procedemos a validar el token, si tenemos definido el objeto _gnsso
+                if (typeof _gnsso === "object") {
+                    $.ajax({
+                        type: 'GET',
+                        url: _gnsso.ssoBaseUrl + "/public/session/validate/token/" + _tokenValue,
+                        success: function (response) {
+                            // Se calcula el tiempo que esta data sera valido, Tiene como base minima 1 hora mas
+                            // una cantidad aleatoria de segundos entre 0 y SECOND_IN_HOUR. La idea de esta parte aleatoria es para
+                            // evitar sobrecargar el RUN y que no todos expiren en una hora similar
+                            response.ssoexp = Math.floor((Date.now() / 1000)) + (1 * SECOND_IN_HOUR) + (_getRandomInt(0, SECOND_IN_HOUR))
+
+                            // Almacenamos la informacion que nos retorno el validador de token
+                            _store(_PROFILE_STORE_KEY, response);
+
+                            // Actualizamos la informacion del profile actual
+                            _profileData = response;
+
+                            if (typeof callback == "function") {
+                                callback(_profileData);
+                            }
+                        }
+                    });
+                } else {
+                    _d("_validateSessionToken: The _gnsso object is not defined");
+                }
+            }
+        } else {
+            // Procedemos a borrar cualquier dato almacenado que pudieramos tener
+            _deleteStoreProfile();
+            if (typeof callback == "function") {
+                callback(null);
+            }
+        }
+    }
+    // --------------------------------------------------------------------------
+    function _pad2(n) {
+        return n < 10 ? '0' + n : n;
+    }
+    // --------------------------------------------------------------------------
+    function _updateJourney() {
+        try {
+            let _journey = _store(_journeyStoreKey),
+                _currentDatetime = new Date(),
+                _formattedDatetime = _currentDatetime.getFullYear() + "-" + _pad2(_currentDatetime.getMonth() + 1) + "-" + _pad2(_currentDatetime.getDate()) + " " + _pad2(_currentDatetime.getHours()) + ":" + _pad2(_currentDatetime.getMinutes()) + ":" + _pad2(_currentDatetime.getSeconds()),
+                _pageview = {
+                    "url": window.location.href,
+                    "datetime": _formattedDatetime,
+                    "referrer": document.referrer
+                };
+
+            if (null === _journey) {
+                _journey = [];
+            }
+
+            // Se agrega este pageview
+            _journey.unshift(_pageview);
+
+            // Ahora verificamos si estamos por sobre el limite de paginas en el historial
+            if (_journey.length > 50) {
+                // Sacamos el ultimo elemento del arreglo
+                _journey.pop();
+            }
+
+            // Volvemos a almacenar el historial de pageviews actualizado
+            _store(_journeyStoreKey, _journey);
+        } catch (err) {
+        }
+    }
+    // ***************************************************************************************
+    return {
+        init: function () {
+            // Encendemos temporalmente el modo debug para que salga este mensaje en la consola
+            // del usuario
+            _gndebug = "true";
+            _d('%c Alto!', "Advertencia", 'font-weight: bold; font-size: 50px;color:red;text-shadow:1px 1px 0px black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;');
+            _d("%c Esta es una característica del navegador destinada a los desarrolladores. Si alguien le dijo que copie y pegue algo aquí para habilitar una función del sitio o 'piratear' la cuenta de alguien, se trata de una estafa y le dará acceso a su cuenta.", "Advertencia", "color: blue; font-size: 12px;");
+            _gndebug = _getCookie("gndebug");
+
+            // Cargamos el valor de profile actual, si es que lo tenemos. Luego lo validamos
+            _profileData = _store(_PROFILE_STORE_KEY);
+            _profileDataExtended = _store(_PROFILE_EXTENDED_STORE_KEY);
+
+            tp.push(["init", function () {
+                _validateSessionToken();
+                _loadExtendedUser();
+            }]);
+
+            _updateJourney();
+        },
+        // --------------------------------------------------------------------------
+        forceProfileUpdate: function (callback) {
+            // Borramos el posible profile que se pudiera tener almacenado en el browser
+            _deleteStoreProfile();
+
+            // Validamos la session de usuario desde el servidor RUN
+            _validateSessionToken(callback);
+            _loadExtendedUser();
+        },
+        // --------------------------------------------------------------------------
+        // Public variables
+        // Public methods
+        getUserProperty: function (propertyName) {
+            return _getUserProperty(propertyName);
+        },
+        // --------------------------------------------------------------------------
+        getVersion: function () {
+            return _version;
+        },
+        // --------------------------------------------------------------------------
+        saveReferer: function (pReferer) {
+            if (typeof pReferer === 'undefined') {
+                pReferer = window.location.href;
+            }
+
+            _store(_refererStorageKey, pReferer);
+            return true;
+        },
+        // --------------------------------------------------------------------------
+        getReferer: function (deleteStoreValue) {
+            var _referer = _store(_refererStorageKey);
+            if (typeof deleteStoreValue !== 'undefined') {
+                // Borramos el posible valor que se pudiera tener en el storage
+                // si asi lo piden
+                if (deleteStoreValue) {
+                    _store(_refererStorageKey, null);
+                }
+            }
+            // Sino tenemos referer guardado, por default lo enviamos a la portada
+            if (null === _referer || typeof _referer === 'undefined') {
+                _referer = "/";
+            }
+            return _referer;
+        },
+        // --------------------------------------------------------------------------
+        generateClientVal: function () {
+            // Generamos un token aleatorio
+            var _token = _generateToken(16);
+            // Lo almacenamos en el store correspondiente
+            _store(_clientKey, _token);
+            // Retornamos este valor generado
+            return _token;
+        },
+        // --------------------------------------------------------------------------
+        getClientVal: function () {
+            return _store(_clientKey);
+        },
+        // --------------------------------------------------------------------------
+        getQSParameterByName: function (name, defaultValue, url) {
+            return _getQSParameterByName(name, defaultValue, url);
+        },
+        // --------------------------------------------------------------------------
+        getSessionType: function () {
+            var _sessionType = _SESSION_TYPE_ANONYMOUS;
+
+            // Trabajamos con respecto a la info que tenemos en _profileData
+            if (null !== _profileData) {
+                // Si es distinto de null, entonces minimo es un usuario registrado
+                _sessionType = _SESSION_TYPE_REGISTERED;
+
+                // Ahora validamos si es suscriptor del producto actual
+                if (typeof _gnsso === "object" && _profileData.hasOwnProperty("resources")) {
+                    if (_gnsso.productCode === "LNC" && _profileData.resources.includes("LN_ACCESS")) {
+                        _sessionType = _SESSION_TYPE_SUBSCRIBED;
+                    } else if (_gnsso.productCode === "ELF" && _profileData.resources.includes("EF_ACCESS")) {
+                        _sessionType = _SESSION_TYPE_SUBSCRIBED;
+                    }
+                }
+            }
+            _d("Current session type is " + _sessionType, "gnsso.getSessionType");
+            return _sessionType;
+        },
+        // --------------------------------------------------------------------------
+        getWithoutAdsProperty: function () {
+            // Por el momento vamos a mostrarle publicidad a todos hasta que determinemos
+            // como crear segmentos en Piano para excluirles la publicidad
+            return "0";
+        },
+        // --------------------------------------------------------------------------
+        setCookie: function (name, value, days) {
+            setCookie(name, value, days);
+        },
+        // --------------------------------------------------------------------------
+        getCookie: function (name) {
+            return _getCookie(name);
+        },
+        // --------------------------------------------------------------------------
+        deleteCookie: function (name) {
+            _deleteCookie(name);
+        },
+        // --------------------------------------------------------------------------
+        deleteLocalStorage: function (key) {
+            if (localStorage) {
+                localStorage.removeItem(key);
+                _d("Deleted localStorage key (" + key + ")", "GNSSO.deleteLocalStorage");
+            }
+
+            if (sessionStorage) {
+                sessionStorage.removeItem(key);
+                _d("Deleted sessionStorage key (" + key + ")", "GNSSO.deleteLocalStorage");
+            }
+        },
+        // --------------------------------------------------------------------------
+        sendMatherEconomicsEvent: function (event) {
+            var _gnId = _getUserProperty("gnid"),
+                _options = {},
+                _parameters = [];
+
+            // Se arman los parametros que se van a push en el objeto de Mather
+            _parameters = [
+                "paywallEvent",
+                event
+            ];
+
+            // Si tenemos in gnid, entonces lo asignamos como id de usuario para mather
+            if (null !== _gnId && "" !== _gnId) {
+                _options.userId = _gnId;
+            }
+
+            // Si tenemos al menos una propiedad en el objeto de usuario actual, entonces
+            // lo agregamos a los parametros
+            if (Object.keys(_options).length > 0) {
+                _parameters.push(_options);
+            }
+
+            // Si estamos en un iframe, entonces enviamos la info al top
+            if (GNSSO.inIframe()) {
+                (window.top._matherq = window.top._matherq || []).push(_parameters);
+            } else {
+                (window._matherq = window._matherq || []).push(_parameters);
+            }
+
+            _d("We report an event to MatherEconomics with the following parameters:", "GNSSO.sendMatherEconomicsEvent");
+            _d(_parameters, "GNSSO.sendMatherEconomicsEvent");
+        },
+        // --------------------------------------------------------------------------
+        inIframe: function () {
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
+        },
+        // --------------------------------------------------------------------------
+        postLogoutActions: function () {
+            // Procedemos a borrar cualquier dato almacenado que pudieramos tener
+            // del profile actual
+            _deleteStoreProfile();
+        },
+        // --------------------------------------------------------------------------
+        debug: function (data, logId, style) {
+            // Si no envian un id, se asigna uno por default
+            if (typeof logId === 'undefined' || null === logId || "" === logId) {
+                logId = "GNSSO.debug";
+            }
+
+            if (typeof style === 'undefined' || null === style || "" === style) {
+                style = "";
+            }
+
+            _d(data, logId, style);
+        },
+        // --------------------------------------------------------------------------
+        store: function (key, value) {
+            return _store(key, value);
+        },
+        // --------------------------------------------------------------------------
+        getJourney: function () {
+            let _journey = _store(_journeyStoreKey);
+
+            if (null === _journey) {
+                _journey = [];
+            }
+            return _journey;
+        },
+        // --------------------------------------------------------------------------
+        gaSendEvent: function (category, action, label) {
+            var _tracker = null;
+            try {
+                if ("ga" in window) {
+                    _tracker = ga.getAll()[0];
+                }
+
+                if (null !== _tracker) {
+                    _tracker.send("event", category, action, label);
+                    return true;
+                }
+            } catch (e) {
+                _d(e, "GNSSO.gaSendEvent");
+            }
+
+            return false;
+        }
+        // --------------------------------------------------------------------------
+    };
+})();
+
+GNSSO.init();
+(function(window,undefined){(function(factory){if(typeof define==="function"&&define.amd)define(["jquery"],factory);else if(typeof exports==="object")factory(require("jquery"));else factory(window.jQuery||window.Zepto)})(function($){var dfpScript=this||{};var dfpID="",count=0,uid=0,rendered=0,dfpSelector=".adunit",adsCouldNeverBeInitilized=false,dfpIsLoaded=false,storeAs="googleAdUnit",init=function(id,selector,options){var $adCollection;count=0;rendered=0;dfpID=id;$adCollection=$(selector);dfpScript.shouldCheckForAdBlockers=
+function(){return options?typeof options.afterAdBlocked==="function":false};dfpLoader(options,$adCollection).then(function(){options=setOptions(options);dfpScript.dfpOptions=options;$(function(){createAds(options,$adCollection);displayAds(options,$adCollection)})})},setOptions=function(options){var dfpOptions={setTargeting:{},setCategoryExclusion:"",setLocation:"",enableSingleRequest:true,enableLazyLoad:true,collapseEmptyDivs:"original",refreshExisting:false,disablePublisherConsole:false,disableInitialLoad:false,
+setCentering:false,noFetch:false,namespace:undefined,sizeMapping:{}};if(typeof options.setUrlTargeting==="undefined"||options.setUrlTargeting){var urlTargeting=getUrlTargeting(options.url);$.extend(true,dfpOptions.setTargeting,{UrlHost:urlTargeting.Host,UrlPath:urlTargeting.Path,UrlQuery:urlTargeting.Query})}$.extend(true,dfpOptions,options);if(dfpOptions.googletag)window.googletag.cmd.push(function(){$.extend(true,window.googletag,dfpOptions.googletag)});return dfpOptions},createAds=function(dfpOptions,
+$adCollection){var googletag=window.googletag;$adCollection.each(function(){var $adUnit=$(this);count++;var adUnitName=getName($adUnit,dfpOptions);var adUnitID=getID($adUnit,adUnitName);var dimensions=getDimensions($adUnit);$adUnit.data("existingContent",$adUnit.html());$adUnit.html("").addClass("display-none");googletag.cmd.push(function(){var googleAdUnit,$adUnitData=$adUnit.data(storeAs);if($adUnitData)googleAdUnit=$adUnitData;else{var slotName;if(dfpID==="")slotName=adUnitName;else slotName="/"+
+dfpID+"/"+adUnitName;if($adUnit.data("outofpage"))googleAdUnit=googletag.defineOutOfPageSlot(slotName,adUnitID);else{googleAdUnit=googletag.defineSlot(slotName,dimensions,adUnitID);if($adUnit.data("companion"))googleAdUnit=googleAdUnit.addService(googletag.companionAds())}googleAdUnit=googleAdUnit.addService(googletag.pubads())}var targeting=$adUnit.data("targeting");if(targeting)$.each(targeting,function(k,v){googleAdUnit.setTargeting(k,v)});var exclusions=$adUnit.data("exclusions");if(exclusions){var exclusionsGroup=
+exclusions.split(",");var valueTrimmed;$.each(exclusionsGroup,function(k,v){valueTrimmed=$.trim(v);if(valueTrimmed.length>0)googleAdUnit.setCategoryExclusion(valueTrimmed)})}var mapping=$adUnit.data("size-mapping");if(mapping&&dfpOptions.sizeMapping[mapping]){var map=googletag.sizeMapping();$.each(dfpOptions.sizeMapping[mapping],function(k,v){map.addSize(v.browser,v.ad_sizes)});googleAdUnit.defineSizeMapping(map.build())}$adUnit.data(storeAs,googleAdUnit);if(typeof dfpOptions.beforeEachAdLoaded===
+"function")dfpOptions.beforeEachAdLoaded.call(this,$adUnit)})});googletag.cmd.push(function(){var pageConfig={allowOverlayExpansion:true,allowPushExpansion:true,sandbox:true};var pubadsService=googletag.pubads();pubadsService.setSafeFrameConfig(pageConfig);if(dfpOptions.enableLazyLoad){dfpOptions.enableSingleRequest=false;dfpOptions.collapseEmptyDivs=false}if(dfpOptions.enableSingleRequest)pubadsService.enableSingleRequest();$.each(dfpOptions.setTargeting,function(k,v){pubadsService.setTargeting(k,
+v)});var setLocation=dfpOptions.setLocation;if(typeof setLocation==="object")if(typeof setLocation.latitude==="number"&&typeof setLocation.longitude==="number"&&typeof setLocation.precision==="number")pubadsService.setLocation(setLocation.latitude,setLocation.longitude,setLocation.precision);else if(typeof setLocation.latitude==="number"&&typeof setLocation.longitude==="number")pubadsService.setLocation(setLocation.latitude,setLocation.longitude);if(dfpOptions.setCategoryExclusion.length>0){var exclusionsGroup=
+dfpOptions.setCategoryExclusion.split(",");var valueTrimmed;$.each(exclusionsGroup,function(k,v){valueTrimmed=$.trim(v);if(valueTrimmed.length>0)pubadsService.setCategoryExclusion(valueTrimmed)})}if(dfpOptions.collapseEmptyDivs)pubadsService.collapseEmptyDivs();if(dfpOptions.disablePublisherConsole)pubadsService.disablePublisherConsole();if(dfpOptions.companionAds){googletag.companionAds().setRefreshUnfilledSlots(true);if(!dfpOptions.disableInitialLoad)pubadsService.enableVideoAds()}if(dfpOptions.disableInitialLoad)pubadsService.disableInitialLoad();
+if(dfpOptions.noFetch)pubadsService.noFetch();if(dfpOptions.setCentering)pubadsService.setCentering(true);pubadsService.addEventListener("slotRenderEnded",function(event){rendered++;var $adUnit=$("#"+event.slot.getSlotId().getDomId());var display=event.isEmpty?"none":"block";var $existingContent=$adUnit.data("existingContent");if(display==="none"&&$.trim($existingContent).length>0&&dfpOptions.collapseEmptyDivs==="original"){$adUnit.show().html($existingContent);display="block display-original"}$adUnit.removeClass("display-none").addClass("display-"+
+display);if(typeof dfpOptions.afterEachAdLoaded==="function")dfpOptions.afterEachAdLoaded.call(this,$adUnit,event);if(typeof dfpOptions.afterAllAdsLoaded==="function"&&rendered===count)dfpOptions.afterAllAdsLoaded.call(this,$adCollection)});if(dfpScript.shouldCheckForAdBlockers()&&!googletag._adBlocked_)setTimeout(function(){var slots=pubadsService.getSlots?pubadsService.getSlots():[];if(slots.length>0)$.get(slots[0].getContentUrl()).always(function(r){if(r.status!==200)$.each(slots,function(){var $adUnit=
+$("#"+this.getSlotId().getDomId());dfpOptions.afterAdBlocked.call(dfpScript,$adUnit,this)})})},0);if(dfpOptions.enableLazyLoad)googletag.pubads().enableLazyLoad({fetchMarginPercent:0,renderMarginPercent:0,mobileScaling:2});googletag.enableServices()})},displayAds=function(dfpOptions,$adCollection){var googletag=window.googletag;if(dfpScript.shouldCheckForAdBlockers()&&!googletag._adBlocked_)if(googletag.getVersion){var script="//partner.googleadservices.com/gpt/pubads_impl_"+googletag.getVersion()+
+".js";$.getScript(script).always(function(r){if(r&&r.statusText==="error")$.each($adCollection,function(){dfpOptions.afterAdBlocked.call(dfpScript,$(this))})})}$adCollection.each(function(){var $adUnit=$(this),$adUnitData=$adUnit.data(storeAs);if(googletag._adBlocked_)if(dfpScript.shouldCheckForAdBlockers())dfpOptions.afterAdBlocked.call(dfpScript,$adUnit);if(dfpOptions.refreshExisting&&$adUnitData&&$adUnit.hasClass("display-block"))googletag.cmd.push(function(){googletag.pubads().refresh([$adUnitData])});
+else googletag.cmd.push(function(){googletag.display($adUnit.attr("id"))})})},getUrlTargeting=function(url){var urlMatches=(url||window.location.toString()).match(/^(([^:/?#]+):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/);var matchedAuthority=urlMatches[4]||"";var matchedPath=(urlMatches[5]||"").replace(/(.)\/$/,"$1");var matchedQuery=urlMatches[7]||"";var params=matchedQuery.replace(/\=/ig,":").split("\x26");return{Host:matchedAuthority,Path:matchedPath,Query:params}},getID=function($adUnit,
+adUnitName){uid++;return $adUnit.attr("id")||$adUnit.attr("id",adUnitName.replace(/[^A-z0-9]/g,"_")+"-auto-gen-id-"+uid).attr("id")},getName=function($adUnit,dfpOptions){var adUnitName=$adUnit.data("adunit")||dfpOptions.namespace||$adUnit.attr("id")||"";if(typeof dfpOptions.alterAdUnitName==="function")adUnitName=dfpOptions.alterAdUnitName.call(this,adUnitName,$adUnit);return adUnitName},getDimensions=function($adUnit){var dimensions=[],dimensionsData=$adUnit.data("dimensions");if(dimensionsData){var dimensionGroups=
+dimensionsData.split(",");$.each(dimensionGroups,function(k,v){var dimensionSet=v.split("x");dimensions.push([parseInt(dimensionSet[0],10),parseInt(dimensionSet[1],10)])})}else dimensions.push([$adUnit.width(),$adUnit.height()]);return dimensions},dfpLoader=function(options,$adCollection){function execBlockEvents(){if(dfpScript.shouldCheckForAdBlockers())$.each($adCollection,function(){options.afterAdBlocked.call(dfpScript,$(this))})}dfpIsLoaded=dfpIsLoaded||$('script[src*\x3d"doubleclick.net/tag/js/gpt.js"]').length;
+if(dfpIsLoaded){if(adsCouldNeverBeInitilized)execBlockEvents();return $.Deferred().resolve()}var loaded=$.Deferred();window.googletag=window.googletag||{};window.googletag.cmd=window.googletag.cmd||[];var gads=document.createElement("script");gads.async=true;gads.type="text/javascript";gads.onerror=function(){dfpBlocked();loaded.resolve();adsCouldNeverBeInitilized=true;execBlockEvents()};gads.onload=function(){if(!googletag._loadStarted_){googletag._adBlocked_=true;execBlockEvents()}loaded.resolve()};
+var useSSL="https:"===document.location.protocol;gads.src=(useSSL?"https:":"http:")+"//securepubads.g.doubleclick.net/tag/js/gpt.js";document.getElementsByTagName("head")[0].appendChild(gads);if(gads.style.display==="none")dfpBlocked();return loaded},dfpBlocked=function(){var googletag=window.googletag;var commands=googletag.cmd;var _defineSlot=function(name,dimensions,id,oop){googletag.ads.push(id);googletag.ads[id]={renderEnded:function(){},addService:function(){return this}};return googletag.ads[id]};
+googletag={cmd:{push:function(callback){callback.call(dfpScript)}},ads:[],pubads:function(){return this},noFetch:function(){return this},disableInitialLoad:function(){return this},disablePublisherConsole:function(){return this},enableSingleRequest:function(){return this},setTargeting:function(){return this},collapseEmptyDivs:function(){return this},enableServices:function(){return this},defineSlot:function(name,dimensions,id){return _defineSlot(name,dimensions,id,false)},defineOutOfPageSlot:function(name,
+id){return _defineSlot(name,[],id,true)},display:function(id){googletag.ads[id].renderEnded.call(dfpScript);return this}};$.each(commands,function(k,v){googletag.cmd.push(v)})};$.dfp=$.fn.dfp=function(id,options){options=options||{};if(id===undefined)id=dfpID;if(typeof id==="object"){options=id;id=options.dfpID||dfpID}var selector=this;if(typeof this==="function")selector=dfpSelector;init(id,selector,options);return this}})})(window);

@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\uftuser\repos\david\loadrunner_octane\lr-octane\WebHttpHtml_octane_test
+-IC:\PCHOST\include
+-ec:\users\uftuser\repos\david\loadrunner_octane\lr-octane\webhttphtml_octane_test\\logfile.log
+c:\users\uftuser\repos\david\loadrunner_octane\lr-octane\webhttphtml_octane_test\\combined_WebHttpHtml_octane_test.c
+c:\users\uftuser\repos\david\loadrunner_octane\lr-octane\webhttphtml_octane_test\\pre_cci.c

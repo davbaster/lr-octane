@@ -1,0 +1,13 @@
+HTTP/2.0 204
+Status: 204
+p3p: CP="This is not a P3P policy! See http://support.google.com/accounts/answer/151657 for more info."
+timing-allow-origin: *
+cross-origin-resource-policy: cross-origin
+cache-control: private, max-age=15
+content-type: text/html; charset=UTF-8
+x-content-type-options: nosniff
+date: Fri, 07 May 2021 20:33:33 GMT
+server: cafe
+x-xss-protection: 0
+alt-svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+

@@ -1,0 +1,16 @@
+GET /v2/www.nacion.com/thirdpartycookie?section= HTTP/1.1
+Host: api.viafoura.co
+Connection: keep-alive
+sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"
+Accept: application/json, text/plain, */*
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+Origin: https://www.nacion.com
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.nacion.com/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: VfSess=qg035i1ns9o1btu87bqlf1tsqr; vfThirdpartyCookiesEnabled=true
+
